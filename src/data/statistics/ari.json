@@ -2,45 +2,44 @@
   {
     "period": "FY-2024",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
+      "region": "Region II",
+      "province": "Nueva Vizcaya",
+      "lgu_name": "Bagabag",
       "lgu_type": "Municipality"
     },
     "locally_sourced_revenue": {
       "tax_revenue": {
-        "real_property_tax_general_fund": 15.32,
-        "tax_on_business": 69.66,
-        "other_taxes": 2.75,
-        "total_tax_revenue": 87.73
+        "real_property_tax_general_fund": 0,
+        "tax_on_business": 0,
+        "other_taxes": 0,
+        "total_tax_revenue": 0
       },
       "non_tax_revenue": {
-        "regulatory_fees": 20.87,
-        "service_user_charges": 6.71,
-        "receipts_from_economic_enterprises": 11.49,
-        "total_non_tax_revenue": 39.08
+        "regulatory_fees": 0,
+        "service_user_charges": 0,
+        "receipts_from_economic_enterprises": 0,
+        "total_non_tax_revenue": 0
       },
-      "total_locally_sourced_revenue": 126.81
+      "total_locally_sourced_revenue": 27.0
     },
     "other_income_sources": {
-      "interest_income": 0.32,
-      "national_tax_allotment": 328.82
+      "interest_income": 0,
+      "national_tax_allotment": 195.2
     },
     "other_shares_from_national_tax_collection": {
-      "share_from_economic_zone": 0.0,
-      "share_from_evat": 0.0,
-      "share_from_national_wealth": 0.0,
-      "share_from_pagcor_pcso_lotto": 1.11,
-      "share_from_tobacco_excise_tax": 0.0,
-      "others": 0.0,
-      "total_other_shares": 1.11
+      "share_from_economic_zone": 0,
+      "share_from_evat": 0,
+      "share_from_national_wealth": 0,
+      "share_from_pagcor_pcso_lotto": 0,
+      "share_from_tobacco_excise_tax": 4.9,
+      "others": 0,
+      "total_other_shares": 4.9
     },
     "summary_indicators": {
-      "annual_regular_income": 457.06,
+      "annual_regular_income": 225.1,
+      "income_class": "2nd",
       "dependency_rates": {
-        "lsr_dependency": "27.7%",
-        "nta_dependency": "71.9%",
-        "other_shares_from_national_tax_dependency": "0.24%"
+        "notes": "Figures in millions of pesos. ARI, NTA, locally sourced total, and tobacco excise from public BLGF-derived summaries (see SOURCES.md). Tax/non-tax line splits set to 0 until a detailed ARI statement is sourced."
       }
     }
   }

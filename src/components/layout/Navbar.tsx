@@ -65,15 +65,17 @@ export const Navbar: FC = () => {
             >
               About
             </Link>
-            <a
-              href={config.lgu.officialWebsite}
-              target='_blank'
-              rel='noreferrer'
-              className='hover:text-kapwa-text-brand inline-flex text-[9px] font-bold tracking-widest whitespace-nowrap text-kapwa-text-support uppercase sm:text-[10px] md:text-xs'
-            >
-              <span className='inline sm:hidden'>Gov.ph</span>
-              <span className='hidden sm:inline'>Official Gov.ph</span>
-            </a>
+            {config.lgu.officialWebsite ? (
+              <a
+                href={config.lgu.officialWebsite}
+                target='_blank'
+                rel='noreferrer'
+                className='hover:text-kapwa-text-brand inline-flex text-[9px] font-bold tracking-widest whitespace-nowrap text-kapwa-text-support uppercase sm:text-[10px] md:text-xs'
+              >
+                <span className='inline sm:hidden'>Gov.ph</span>
+                <span className='hidden sm:inline'>Official Gov.ph</span>
+              </a>
+            ) : null}
             <Link
               to={`https://hotlines.bettergov.ph/?city=${encodeURIComponent(config.lgu.name)}&province=${encodeURIComponent(config.lgu.province)}`}
               className='hover:text-kapwa-text-brand inline-flex text-[9px] font-bold tracking-widest whitespace-nowrap text-kapwa-text-support uppercase sm:text-[10px] md:text-xs'
@@ -119,6 +121,10 @@ export const Navbar: FC = () => {
               <div className='line-clamp-2 text-[9px] leading-tight font-medium text-kapwa-text-support md:line-clamp-1 md:text-xs md:leading-normal'>
                 Community Portal for {config.lgu.fullName}
               </div>
+              <div className='mt-0.5 line-clamp-2 text-[8px] leading-tight font-medium text-kapwa-text-support md:text-[10px]'>
+                Independent and unofficial. Not a website of the Municipal
+                Government of Bagabag.
+              </div>
             </div>
           </Link>
 
@@ -160,16 +166,29 @@ export const Navbar: FC = () => {
                   {/* Desktop Dropdown Menu */}
                   {hasChildren && hoveredDropdown === item.label && (
                     <div className='absolute left-0 top-full py-2 w-64 rounded-b-xl border shadow-xl duration-200 animate-in fade-in slide-in-from-top-2 border-kapwa-border-weak bg-kapwa-bg-surface'>
-                      {item.children?.map(child => (
-                        <Link
-                          key={child.label}
-                          to={child.href}
-                          className='block px-5 py-3 text-xs font-bold tracking-wider uppercase transition-colors hover:bg-kapwa-bg-surface-raised hover:text-kapwa-text-link-hover text-kapwa-text-strong'
-                          onClick={closeMenu}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                      {item.children?.map(child =>
+                        child.href.startsWith('http') ? (
+                          <a
+                            key={child.label}
+                            href={child.href}
+                            target={child.target || '_blank'}
+                            rel='noreferrer'
+                            className='block px-5 py-3 text-xs font-bold tracking-wider uppercase transition-colors hover:bg-kapwa-bg-surface-raised hover:text-kapwa-text-link-hover text-kapwa-text-strong'
+                            onClick={closeMenu}
+                          >
+                            {child.label}
+                          </a>
+                        ) : (
+                          <Link
+                            key={child.label}
+                            to={child.href}
+                            className='block px-5 py-3 text-xs font-bold tracking-wider uppercase transition-colors hover:bg-kapwa-bg-surface-raised hover:text-kapwa-text-link-hover text-kapwa-text-strong'
+                            onClick={closeMenu}
+                          >
+                            {child.label}
+                          </Link>
+                        )
+                      )}
                     </div>
                   )}
                 </div>

@@ -9,7 +9,8 @@ import Hero from '@/components/home/Hero';
 // import JoinUsStrip from '../components/home/JoinUsStrip';
 import ServicesSection from '@/components/home/ServicesSection';
 import TimelineSection from '@/components/home/TimelineSection';
-import WeatherMapSection from '@/components/home/WeatherMapSection';
+// WeatherMapSection needs /api/weather (Pages Functions + KV). Off for static Worker deploy.
+// import WeatherMapSection from '@/components/home/WeatherMapSection';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 
 const Home: FC = () => {
@@ -31,10 +32,7 @@ const Home: FC = () => {
             <TimelineSection />
           </ErrorBoundary>
 
-          <ErrorBoundary name='WeatherMap'>
-            <WeatherMapSection />
-          </ErrorBoundary>
-
+          {/* WeatherMapSection disabled: no backend on static Worker */}
           {/* <NewsSection /> */}
 
           <ErrorBoundary name='Government'>

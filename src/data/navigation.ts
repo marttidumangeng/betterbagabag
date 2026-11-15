@@ -62,6 +62,11 @@ export const mainNavigation: NavigationItem[] = [
         label: 'DPWH Projects',
         href: '/transparency/infrastructure',
       },
+      {
+        label: 'National Budget (Bagabag)',
+        href: 'https://budget.betterbagabag.org',
+        target: '_blank',
+      },
     ],
     ...(config.features.transparency ? {} : { hidden: true }),
   },
@@ -104,7 +109,9 @@ export const footerNavigation = {
         { label: 'Elected Officials', href: '/government/elected-officials' },
         { label: 'Departments', href: '/government/departments' },
         { label: 'Barangay Directory', href: '/government/barangays' },
-        { label: 'OpenLGU Portal', href: '/openlgu' },
+        ...(config.features.openLGU
+          ? [{ label: 'OpenLGU Portal', href: '/openlgu' }]
+          : []),
         { label: 'Transparency', href: '/transparency/financial' },
       ],
     },
@@ -132,6 +139,11 @@ export const footerNavigation = {
           target: '_blank',
         },
         {
+          label: 'Bagabag Budget Portal',
+          href: 'https://budget.betterbagabag.org',
+          target: '_blank',
+        },
+        {
           label: 'Budget Tracker',
           href: 'https://budget.bettergov.ph',
           target: '_blank',
@@ -146,16 +158,15 @@ export const footerNavigation = {
     {
       title: 'Resources',
       links: [
-        {
-          label: `${config.lgu.name} Gov.ph`,
-          href: config.lgu.officialWebsite,
-          target: '_blank',
-        },
-        // {
-        //   label: 'Official Gazette',
-        //   href: 'https://www.officialgazette.gov.ph',
-        //   target: '_blank',
-        // },
+        ...(config.lgu.officialWebsite
+          ? [
+              {
+                label: `${config.lgu.name} Gov.ph`,
+                href: config.lgu.officialWebsite,
+                target: '_blank' as const,
+              },
+            ]
+          : []),
         {
           label: 'Freedom of Information',
           href: 'https://www.foi.gov.ph',
@@ -166,8 +177,6 @@ export const footerNavigation = {
           href: config.lgu.provinceWebsite,
           target: '_blank',
         },
-        // { label: 'Privacy Policy', href: '/privacy' },
-        // { label: 'Accessibility', href: '/accessibility' },
       ],
     },
   ],

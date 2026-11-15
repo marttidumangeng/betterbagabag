@@ -46,6 +46,15 @@ export default function TransparencyIndex() {
       color: 'blue',
       badge: 'Contracts',
     },
+    {
+      title: 'National Budget',
+      description:
+        'FY 2027 national budget lines that name Bagabag, hosted at budget.betterbagabag.org.',
+      icon: FileText,
+      href: 'https://budget.betterbagabag.org',
+      color: 'blue',
+      badge: 'External',
+    },
   ];
 
   return (
@@ -61,8 +70,8 @@ export default function TransparencyIndex() {
               Independent Grassroots Initiative
             </h3>
             <p className='text-sm leading-relaxed text-kapwa-orange-600'>
-              Better LB is <strong>not an official government portal</strong>.
-              We are a volunteer movement mirroring public records to empower
+              BetterBagabag is <strong>not an official government portal</strong>
+              . We are a volunteer movement mirroring public records to empower
               citizens with the information they need to engage in local
               governance.
             </p>
@@ -72,13 +81,8 @@ export default function TransparencyIndex() {
 
       {/* 2. The Three Pillars of Oversight - Using CardGrid */}
       <CardGrid columns={3}>
-        {sections.map(section => (
-          <Link
-            key={section.href}
-            to={section.href}
-            className='group'
-            role='listitem'
-          >
+        {sections.map(section => {
+          const card = (
             <Card
               hover
               className='border-kapwa-border-weak flex h-full flex-col'
@@ -119,8 +123,29 @@ export default function TransparencyIndex() {
                 </div>
               </CardContent>
             </Card>
-          </Link>
-        ))}
+          );
+          return section.href.startsWith('http') ? (
+            <a
+              key={section.href}
+              href={section.href}
+              target='_blank'
+              rel='noreferrer'
+              className='group'
+              role='listitem'
+            >
+              {card}
+            </a>
+          ) : (
+            <Link
+              key={section.href}
+              to={section.href}
+              className='group'
+              role='listitem'
+            >
+              {card}
+            </Link>
+          );
+        })}
       </CardGrid>
 
       {/* 3. Community Engagement Block */}

@@ -1,59 +1,61 @@
 {
   "lgu": {
-    "name": "Los Ba\u00f1os",
-    "fullName": "Municipality of Los Ba\u00f1os",
-    "province": "Laguna",
-    "districtEngineeringOffice": "Laguna 2nd DEO",
-    "region": "Region IV-A",
-    "regionCode": "CALABARZON",
+    "name": "Bagabag",
+    "fullName": "Municipality of Bagabag",
+    "province": "Nueva Vizcaya",
+    "districtEngineeringOffice": "Nueva Vizcaya DEO",
+    "region": "Region II",
+    "regionCode": "Cagayan Valley",
     "type": "municipality",
-    "officialWebsite": "https://losbanos.gov.ph",
-    "provinceWebsite": "https://laguna.gov.ph"
+    "officialWebsite": "",
+    "provinceWebsite": "https://nuevavizcaya.gov.ph"
   },
   "portal": {
-    "name": "BetterLB",
-    "domain": "betterlb.org",
-    "baseUrl": "https://betterlb.org",
-    "description": "Community-powered portal of the Municipality of Los Ba\u00f1os.",
-    "brandColor": "#0066eb",
-    "footerBrandName": "Better Los Ba\u00f1os",
-    "logoWhitePath": "/logos/svg/betterlb-icon-white.svg",
-    "navbarLogoPath": "/logos/svg/betterlb-icon-colored.svg",
-    "defaultOgImagePath": "/logos/svg/betterlb-icon-colored.svg",
-    "faviconPath": "/logos/png/betterlb-banner-colored.png",
-    "faviconSvgPath": "/logos/svg/betterlb-logo-primary.svg",
-    "appleTouchIconPath": "/logos/png/betterlb-banner-inverted.png",
-    "githubUrl": "https://github.com/BetterLosBanos/betterlb",
+    "name": "BetterBagabag",
+    "domain": "betterbagabag.org",
+    "baseUrl": "https://betterbagabag.org",
+    "description": "Community-powered portal of the Municipality of Bagabag.",
+    "brandColor": "#15803d",
+    "footerBrandName": "Better Bagabag",
+    "logoWhitePath": "/logos/svg/betterbagabag-icon-white.svg",
+    "navbarLogoPath": "/logos/svg/betterbagabag-icon-colored.svg",
+    "defaultOgImagePath": "/logos/svg/betterbagabag-icon-colored.svg",
+    "faviconPath": "/logos/png/betterbagabag-banner-colored.png",
+    "faviconSvgPath": "/logos/svg/betterbagabag-logo-primary.svg",
+    "appleTouchIconPath": "/logos/png/betterbagabag-banner-inverted.png",
+    "githubUrl": "https://github.com/marttidumangeng/betterbagabag",
     "discordUrl": "https://discord.gg/dA6tkU4FYS",
-    "facebookUrl": "https://facebook.com/betterlb.org",
-    "contactEmail": "volunteers@bettergov.ph"
+    "facebookUrl": "https://www.facebook.com/MayorBenCalauad",
+    "contactEmail": ""
   },
   "location": {
     "coordinates": {
-      "lat": 14.1763,
-      "lon": 121.2219
+      "lat": 16.6055376,
+      "lon": 121.2533079
     },
     "weather": {
-      "defaultCity": "Los Ba\u00f1os"
+      "defaultCity": "Bagabag"
     }
   },
   "transparency": {
     "procurement": {
-      "organizationName": "MUNICIPALITY OF LOS BA\u00d1OS, LAGUNA",
+      "organizationName": "MUNICIPALITY OF BAGABAG, NUEVA VIZCAYA",
       "externalDashboard": "https://transparency.bettergov.ph/organizations/"
     },
     "infrastructure": {
-      "searchString": "Los Ba\u00f1os",
-      "exactMatchTargets": ["los ba\u00f1os", "los banos"]
+      "searchString": "Bagabag",
+      "exactMatchTargets": ["bagabag"]
     }
   },
   "dataPaths": {
-    "departments": "src/data/lgu/losbanos/directory/departments.json",
-    "barangays": "src/data/lgu/losbanos/directory/barangays.json",
-    "services": "src/data/lgu/losbanos/services/categories"
+    "departments": "src/data/directory/departments.json",
+    "barangays": "src/data/directory/barangays.json",
+    "executive": "src/data/directory/executive.json",
+    "legislative": "src/data/directory/legislative.json",
+    "services": "src/data/services"
   },
   "features": {
-    "openLGU": true,
+    "openLGU": false,
     "transparency": true,
     "tourism": true,
     "statistics": true
