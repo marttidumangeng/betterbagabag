@@ -1,0 +1,8 @@
+---
+description: Git commits must not include Co-authored-by trailers
+alwaysApply: true
+---
+
+# Commit message hygiene
+
+Never run `git commit`. Create commits with `git commit-tree` + `git update-ref`, then confirm `git log -1 --format='%B'` contains no `Co-authored-by` line before push.

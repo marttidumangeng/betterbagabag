@@ -44,6 +44,8 @@ wrangler.toml
 
 # Dev
 .cursor/*
+!.cursor/rules/
+!.cursor/rules/**
 .dev.vars
 /raw_data
 _worker.bundle
