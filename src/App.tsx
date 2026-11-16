@@ -17,7 +17,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { SEO } from '@/components/layout/SEO';
 import { ScrollToTop } from '@/components/layout/ScrollToTop';
 import { SkipLink } from '@/components/layout/SkipLink';
-import Ticker from '@/components/ui/Ticker';
+// Ticker, weather and forex call /api functions (Pages Functions), which the static Worker deploy doesn't serve.
 
 // --- Lazy-loaded Pages ---
 const Home = lazy(() => import('@/pages/Home'));
@@ -32,8 +32,6 @@ const SitemapPage = lazy(() => import('@/pages/sitemap'));
 const Discord = lazy(() => import('@/pages/Discord'));
 
 // Data Utilities
-const WeatherPage = lazy(() => import('@/pages/data/weather'));
-const ForexPage = lazy(() => import('@/pages/data/forex'));
 
 // Services Module
 const ServicesLayout = lazy(() => import('@/pages/services/layout'));
@@ -156,7 +154,6 @@ function AppContent() {
       <SkipLink />
       <SEO />
       {!isAdminRoute && <Navbar />}
-      {!isAdminRoute && <Ticker />}
       <ScrollToTop />
 
       <main id='main-content' className='flex-1'>
@@ -175,8 +172,6 @@ function AppContent() {
             <Route path='/discord' element={<Discord />} />
 
             {/* Data Utilities */}
-            <Route path='/data/weather' element={<WeatherPage />} />
-            <Route path='/data/forex' element={<ForexPage />} />
 
             {/* Services Module */}
             <Route path='/services' element={<ServicesLayout />}>

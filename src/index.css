@@ -5,6 +5,22 @@
 @source '../node_modules/@bettergov/kapwa/dist';
 @import '@bettergov/kapwa/styles';
 
+/* Bagabag green in place of Kapwa's brand blue. The 600 step is the brand colour
+   (#15803d, as in config/lgu.config.json and the budget portal at budget.betterbagabag.org). */
+@theme {
+  --color-kapwa-brand-50: #e6f4ea;
+  --color-kapwa-brand-100: #dcfce7;
+  --color-kapwa-brand-200: #bbf7d0;
+  --color-kapwa-brand-300: #86efac;
+  --color-kapwa-brand-400: #22c55e;
+  --color-kapwa-brand-500: #16a34a;
+  --color-kapwa-brand-600: #15803d;
+  --color-kapwa-brand-700: #116432;
+  --color-kapwa-brand-800: #14532d;
+  --color-kapwa-brand-900: #0f3d22;
+  --color-kapwa-brand-950: #052e16;
+}
+
 :root {
   --font-kapwa-sans:
     'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,

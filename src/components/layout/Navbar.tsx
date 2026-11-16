@@ -118,10 +118,10 @@ export const Navbar: FC = () => {
               <div className='text-lg font-black tracking-tighter leading-none text-kapwa-text-strong md:text-xl'>
                 {config.portal.name}
               </div>
-              <div className='line-clamp-2 text-[9px] leading-tight font-medium text-kapwa-text-support md:line-clamp-1 md:text-xs md:leading-normal'>
+              <div className='hidden text-xs leading-normal font-medium text-kapwa-text-support md:line-clamp-1 md:block'>
                 Community Portal for {config.lgu.fullName}
               </div>
-              <div className='mt-0.5 line-clamp-2 text-[8px] leading-tight font-medium text-kapwa-text-support md:text-[10px]'>
+              <div className='mt-0.5 text-[9px] leading-tight font-medium text-kapwa-text-support md:text-[10px]'>
                 Independent and unofficial. Not a website of the Municipal
                 Government of Bagabag.
               </div>

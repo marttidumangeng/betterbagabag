@@ -7,7 +7,9 @@ Written 2026-11-15. Phases 1–5 done locally. Phase 6 waits for Martti’s go-a
 - Public fork: https://github.com/marttidumangeng/betterbagabag (local clone `C:\Github_Personal\betterbagabag`).
 - Configured for Municipality of Bagabag / BetterBagabag / betterbagabag.org / green `#15803d`.
 - Independence notice in the navbar on every page.
-- Weather and LGU news widgets off (no Pages Functions on the planned static Worker).
+- Weather and LGU news widgets, the top ticker (weather and exchange rates) and the `/data/weather` and `/data/forex` pages are off: they call `/api` Pages Functions that the planned static Worker does not serve.
+- Green theme: the Kapwa brand scale is overridden in `src/index.css` (600 = `#15803d`); `brandColor` in the config is not read by the code.
+- Missing facts show as "Not yet listed" on the site; the list below is what to fill in.
 - Seal-based logos under `public/logos/` (`betterbagabag` slug).
 - Directory: mayor/VM from 2025 election results; 8 SB members; 17 barangays (names only).
 - Statistics: population, 2nd-class income, FY2024 ARI totals, CMCI 2021 overall.
