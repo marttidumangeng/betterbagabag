@@ -17,6 +17,7 @@ import {
 } from '@/components/navigation/Breadcrumb';
 // UI Components
 import { Badge } from '@/components/ui/Badge';
+import { EmptyState } from '@/components/ui/EmptyState';
 
 import FinancialPieChart, {
   ChartDataPoint,
@@ -30,6 +31,7 @@ import { formatLabel } from '@/lib/budgetUtils';
 
 export default function FinancialPage() {
   const {
+    hasData,
     years,
     selectedYear,
     setSelectedYear,
@@ -44,6 +46,35 @@ export default function FinancialPage() {
     comparisonBaseline,
     getQuarter,
   } = useFinancialData();
+
+  if (!hasData || !displayedIncome || !displayedExpenditure || !selectedQuarter) {
+    return (
+      <div className='animate-in fade-in mx-auto max-w-7xl space-y-6 pb-20 duration-500'>
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbHome href='/' />
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href='/transparency'>Transparency</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Financial Report</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
+        <EmptyState
+          title='Municipal SRE Data Not Loaded Yet'
+          message='Bagabag Statement of Receipts and Expenditures quarters have not been sourced for this portal. National budget lines that name Bagabag are on the budget portal.'
+          actionHref='https://budget.betterbagabag.org'
+          actionLabel='Open Budget Portal'
+        />
+      </div>
+    );
+  }
 
   // --- Transform Data for Charts ---
   const calcPct = (val: number, total: number) => (total > 0 ? val / total : 0);

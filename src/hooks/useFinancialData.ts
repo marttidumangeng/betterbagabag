@@ -11,6 +11,8 @@ const getYear = (period: string) => period.split('-')[1];
 const getQuarter = (period: string) => period.split('-')[0];
 
 export function useFinancialData() {
+  const hasData = budgetData.length > 0;
+
   // 1. Determine available years
   const years = useMemo(
     () => Array.from(new Set(budgetData.map(q => getYear(q.period)))).sort(),
@@ -18,7 +20,9 @@ export function useFinancialData() {
   );
 
   // 2. State
-  const [selectedYear, setSelectedYear] = useState(years[years.length - 1]);
+  const [selectedYear, setSelectedYear] = useState(
+    years[years.length - 1] ?? ''
+  );
   const [viewMode, setViewMode] = useState<'quarter' | 'year'>('quarter');
 
   // 3. Filter data for selected year
@@ -29,9 +33,9 @@ export function useFinancialData() {
 
   // 4. Selected Quarter State
   // Initialize with the last available quarter of the latest year
-  const [selectedQuarter, setSelectedQuarter] = useState<FinancialQuarter>(
-    quartersInYear[quartersInYear.length - 1] || budgetData[0]
-  );
+  const [selectedQuarter, setSelectedQuarter] = useState<
+    FinancialQuarter | undefined
+  >(quartersInYear[quartersInYear.length - 1] || budgetData[0]);
 
   /**
    * Smart Year Change Handler
@@ -45,7 +49,9 @@ export function useFinancialData() {
     const newYearData = budgetData.filter(q => getYear(q.period) === newYear);
 
     // Get the currently selected quarter string (e.g., "Q2")
-    const currentQStr = getQuarter(selectedQuarter.period);
+    const currentQStr = selectedQuarter
+      ? getQuarter(selectedQuarter.period)
+      : '';
 
     // Try to find "Q2" in the new year
     const matchingQuarter = newYearData.find(
@@ -65,7 +71,7 @@ export function useFinancialData() {
     () =>
       viewMode === 'year'
         ? aggregateIncome(quartersInYear.map(q => q.current_operating_income))
-        : selectedQuarter.current_operating_income,
+        : selectedQuarter?.current_operating_income,
     [viewMode, quartersInYear, selectedQuarter]
   );
 
@@ -75,18 +81,20 @@ export function useFinancialData() {
         ? aggregateExpenditures(
             quartersInYear.map(q => q.current_operating_expenditures)
           )
-        : selectedQuarter.current_operating_expenditures,
+        : selectedQuarter?.current_operating_expenditures,
     [viewMode, quartersInYear, selectedQuarter]
   );
 
   const displayedFundSummary = useMemo(() => {
-    if (viewMode === 'quarter') return selectedQuarter.fund_summary;
+    if (viewMode === 'quarter') return selectedQuarter?.fund_summary;
     const lastQ = quartersInYear[quartersInYear.length - 1];
     return lastQ?.fund_summary;
   }, [viewMode, selectedQuarter, quartersInYear]);
 
   // 6. Comparison Baseline logic
   const comparisonBaseline = useMemo(() => {
+    if (!selectedQuarter || !selectedYear) return undefined;
+
     const prevYear = (parseInt(selectedYear) - 1).toString();
     const prevYearData = budgetData.filter(q => getYear(q.period) === prevYear);
 
@@ -140,6 +148,7 @@ export function useFinancialData() {
   }, [selectedYear, viewMode, selectedQuarter]);
 
   return {
+    hasData,
     years,
     selectedYear,
     setSelectedYear: changeYear, // Return our smart handler instead of the raw setter
