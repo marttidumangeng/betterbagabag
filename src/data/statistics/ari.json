@@ -39,7 +39,9 @@
       "annual_regular_income": 225.1,
       "income_class": "2nd",
       "dependency_rates": {
-        "notes": "Figures in millions of pesos. ARI, NTA, locally sourced total, and tobacco excise from public BLGF-derived summaries (see SOURCES.md). Tax/non-tax line splits set to 0 until a detailed ARI statement is sourced."
+        "lsr_dependency": "12.0%",
+        "nta_dependency": "86.7%",
+        "notes": "Figures in millions of pesos. ARI 225.1, NTA 195.2, LSR 27.0, tobacco excise 4.9 from public BLGF-derived summaries (see SOURCES.md). Dependency rates = share of ARI. Tax/non-tax line splits set to 0 until a detailed ARI statement is sourced."
       }
     }
   }

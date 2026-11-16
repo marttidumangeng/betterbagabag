@@ -4,6 +4,7 @@ import { Coins, Landmark, Wallet } from 'lucide-react';
 
 import { StatGrid } from '@/components/ui/StatCard';
 import { Badge } from '@/components/ui/Badge';
+import { EmptyState } from '@/components/ui/EmptyState';
 import { DetailSection } from '@/components/layout/PageLayouts';
 import { PageHero } from '@/components/layout/PageLayouts';
 
@@ -20,51 +21,82 @@ const COLORS = {
   other: '#64748b',
 };
 
+const MILLION = 1_000_000;
+
+function pctLabel(part: number, whole: number): string {
+  if (!whole || whole <= 0) return 'Not yet listed';
+  return `${((part / whole) * 100).toFixed(1)}%`;
+}
+
 export default function MunicipalIncomePage() {
   const data = ariData[0];
 
-  const drillDownIncomeData = useMemo(
-    () => [
+  const drillDownIncomeData = useMemo(() => {
+    if (!data) return [];
+    return [
       {
         name: 'National Tax Allotment',
-        value: data.other_income_sources.national_tax_allotment,
+        value: data.other_income_sources.national_tax_allotment * MILLION,
         color: COLORS.national,
       },
       {
         name: 'Locally Sourced Revenue',
-        value: data.locally_sourced_revenue.total_locally_sourced_revenue,
+        value:
+          data.locally_sourced_revenue.total_locally_sourced_revenue * MILLION,
         color: COLORS.local,
         details: [
           {
             name: 'Tax Revenue',
-            value: data.locally_sourced_revenue.tax_revenue.total_tax_revenue,
+            value:
+              data.locally_sourced_revenue.tax_revenue.total_tax_revenue *
+              MILLION,
           },
           {
             name: 'Non-Tax Revenue',
             value:
               data.locally_sourced_revenue.non_tax_revenue
-                .total_non_tax_revenue,
+                .total_non_tax_revenue * MILLION,
           },
         ],
       },
       {
         name: 'Other National Shares',
         value:
-          data.other_shares_from_national_tax_collection.total_other_shares,
+          data.other_shares_from_national_tax_collection.total_other_shares *
+          MILLION,
         color: COLORS.special,
       },
       {
         name: 'Interest Income',
-        value: data.other_income_sources.interest_income,
+        value: data.other_income_sources.interest_income * MILLION,
         color: COLORS.other,
       },
-    ],
-    [data]
-  );
+    ];
+  }, [data]);
+
+  if (!data) {
+    return (
+      <EmptyState
+        title='Municipal Income Data Not Loaded Yet'
+        message='Annual Regular Income figures for Bagabag have not been sourced for this portal yet.'
+        actionHref='/transparency'
+        actionLabel='Open Transparency'
+      />
+    );
+  }
+
+  const ari = data.summary_indicators.annual_regular_income;
+  const lsr = data.locally_sourced_revenue.total_locally_sourced_revenue;
+  const nta = data.other_income_sources.national_tax_allotment;
+  const lsrDependency =
+    data.summary_indicators.dependency_rates.lsr_dependency ??
+    pctLabel(lsr, ari);
+  const ntaDependency =
+    data.summary_indicators.dependency_rates.nta_dependency ??
+    pctLabel(nta, ari);
 
   return (
     <>
-      {/* PageHero - documented pattern for layout headers */}
       <PageHero
         title='Municipal Income'
         description='Detailed analysis of revenue sources, fiscal autonomy, and national tax dependency.'
@@ -77,28 +109,25 @@ export default function MunicipalIncomePage() {
         </div>
       </PageHero>
 
-      {/* KPI Cards - using StatGrid with StatCard */}
       <div className='mb-kapwa-lg'>
         <StatGrid
           columns={3}
           stats={[
             {
               label: 'Total Income',
-              value: formatPesoAdaptive(
-                data.summary_indicators.annual_regular_income * 1_000_000
-              ).fullString,
+              value: formatPesoAdaptive(ari * MILLION).fullString,
               subtext: 'Annual Revenue',
               variant: 'primary',
             },
             {
               label: 'Local Sufficiency',
-              value: `${data.summary_indicators.dependency_rates.lsr_dependency}`,
+              value: `${lsrDependency}`,
               subtext: 'LSR Share',
               variant: 'secondary',
             },
             {
               label: 'NTA Dependency',
-              value: `${data.summary_indicators.dependency_rates.nta_dependency}`,
+              value: `${ntaDependency}`,
               subtext: 'National Allotment',
               variant: 'slate',
               icon: Wallet,
@@ -107,7 +136,6 @@ export default function MunicipalIncomePage() {
         />
       </div>
 
-      {/* Chart wrapped in DetailSection */}
       <div className='mb-kapwa-lg'>
         <DetailSection title='Revenue Composition' icon={Landmark}>
           <div className='flex justify-center'>
@@ -126,7 +154,6 @@ export default function MunicipalIncomePage() {
         </DetailSection>
       </div>
 
-      {/* Full Financial Itemization */}
       <DetailSection title='Full Financial Itemization' icon={Coins}>
         <div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
           <div className='space-y-4'>
@@ -140,7 +167,7 @@ export default function MunicipalIncomePage() {
                   {
                     formatPesoAdaptive(
                       data.locally_sourced_revenue.tax_revenue
-                        .real_property_tax_general_fund
+                        .real_property_tax_general_fund * MILLION
                     ).fullString
                   }
                 </span>
@@ -150,7 +177,8 @@ export default function MunicipalIncomePage() {
                 <span>
                   {
                     formatPesoAdaptive(
-                      data.locally_sourced_revenue.tax_revenue.tax_on_business
+                      data.locally_sourced_revenue.tax_revenue.tax_on_business *
+                        MILLION
                     ).fullString
                   }
                 </span>
@@ -168,7 +196,7 @@ export default function MunicipalIncomePage() {
                   {
                     formatPesoAdaptive(
                       data.locally_sourced_revenue.non_tax_revenue
-                        .regulatory_fees
+                        .regulatory_fees * MILLION
                     ).fullString
                   }
                 </span>
@@ -179,7 +207,7 @@ export default function MunicipalIncomePage() {
                   {
                     formatPesoAdaptive(
                       data.locally_sourced_revenue.non_tax_revenue
-                        .receipts_from_economic_enterprises
+                        .receipts_from_economic_enterprises * MILLION
                     ).fullString
                   }
                 </span>
@@ -196,7 +224,8 @@ export default function MunicipalIncomePage() {
                 <span>
                   {
                     formatPesoAdaptive(
-                      data.other_income_sources.national_tax_allotment
+                      data.other_income_sources.national_tax_allotment *
+                        MILLION
                     ).fullString
                   }
                 </span>
@@ -207,7 +236,7 @@ export default function MunicipalIncomePage() {
                   {
                     formatPesoAdaptive(
                       data.other_shares_from_national_tax_collection
-                        .total_other_shares
+                        .total_other_shares * MILLION
                     ).fullString
                   }
                 </span>
@@ -215,38 +244,27 @@ export default function MunicipalIncomePage() {
             </div>
           </div>
         </div>
+        {data.summary_indicators.dependency_rates.notes && (
+          <p className='text-kapwa-text-disabled mt-6 text-xs'>
+            {data.summary_indicators.dependency_rates.notes}
+          </p>
+        )}
       </DetailSection>
 
-      {/* Footer */}
       <footer className='border-kapwa-border-weak space-y-4 border-t pt-10 text-center'>
-        <div className='bg-kapwa-bg-success-weak text-kapwa-text-success mx-auto flex h-6 w-6 items-center justify-center rounded-full'>
-          <svg
-            className='h-4 w-4'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
-            />
-          </svg>
-        </div>
         <div className='space-y-1'>
           <p className='text-kapwa-text-strong text-[10px] font-bold tracking-widest uppercase'>
-            Verified Data Audit
+            Sourced ARI summary
           </p>
           <p className='text-kapwa-text-disabled text-[10px] font-bold tracking-widest uppercase'>
             Source:{' '}
             <a
-              href='https://data.bettergov.ph/datasets/9/resources/31'
+              href='https://talaanph.org/places/nueva-vizcaya/bagabag/'
               target='_blank'
               rel='noreferrer'
               className='hover:text-kapwa-text-brand underline'
             >
-              Bureau of Local Government Finance (BLGF)
+              BLGF-derived public summary
             </a>
           </p>
         </div>

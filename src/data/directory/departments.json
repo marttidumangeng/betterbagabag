@@ -2,40 +2,248 @@
   {
     "slug": "office-of-the-mayor",
     "office_name": "OFFICE OF THE MAYOR",
-    "address": "Municipal Hall, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
-    "email": null,
+    "address": "San Geronimo, Bagabag, Nueva Vizcaya, Philippines, 3711",
+    "trunkline": ["0955-684-9450"],
+    "website": "https://bagongbagabag.gov.ph/mayors-office-2/",
+    "email": "bagabagmo2022@gmail.com",
     "department_head": {
       "name": "Benigno B. Calauad",
-      "contact": null,
-      "email": null
+      "contact": "0955-684-9450",
+      "email": "bagabagmo2022@gmail.com"
     }
   },
   {
     "slug": "office-of-the-vice-mayor",
     "office_name": "OFFICE OF THE VICE MAYOR",
-    "address": "Municipal Hall, Bagabag, Nueva Vizcaya",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
     "trunkline": [],
-    "website": null,
-    "email": null,
+    "website": "https://bagongbagabag.gov.ph/office-of-sangguniang-bayan/",
+    "email": "sbbagabag@gmail.com",
     "department_head": {
       "name": "Nestor Sevillena",
       "contact": null,
-      "email": null
+      "email": "sbbagabag@gmail.com"
     }
   },
   {
     "slug": "sangguniang-bayan",
     "office_name": "SANGGUNIANG BAYAN",
-    "address": "Municipal Hall, Bagabag, Nueva Vizcaya",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
     "trunkline": [],
-    "website": null,
-    "email": null,
+    "website": "https://bagongbagabag.gov.ph/office-of-sangguniang-bayan/",
+    "email": "sbbagabag@gmail.com",
+    "department_head": {
+      "name": "Nestor Sevillena",
+      "contact": null,
+      "email": "sbbagabag@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-accounting-office",
+    "office_name": "MUNICIPAL ACCOUNTING OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": [],
+    "website": "https://bagongbagabag.gov.ph/municipal-accounting-office/",
+    "email": "lgubagabagacctg@gmail.com",
     "department_head": {
       "name": "Not yet listed",
       "contact": null,
-      "email": null
+      "email": "lgubagabagacctg@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-agriculture-office",
+    "office_name": "MUNICIPAL AGRICULTURE OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0939-747-4530"],
+    "website": "https://bagongbagabag.gov.ph/municipal-agriculture-office/",
+    "email": "magro.bagabag@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0939-747-4530",
+      "email": "magro.bagabag@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-assessors-office",
+    "office_name": "MUNICIPAL ASSESSOR'S OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0975-300-4708"],
+    "website": "https://bagongbagabag.gov.ph/municipal-assesors-office/",
+    "email": "assessorsoffice01203@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0975-300-4708",
+      "email": "assessorsoffice01203@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-budget-office",
+    "office_name": "MUNICIPAL BUDGET OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": [],
+    "website": "https://bagongbagabag.gov.ph/municipal-budget-office/",
+    "email": "bagabagmbo@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": null,
+      "email": "bagabagmbo@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-engineering-office",
+    "office_name": "MUNICIPAL ENGINEERING OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": [],
+    "website": "https://bagongbagabag.gov.ph/municipal-engineering-office/",
+    "email": "meobagabag123@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": null,
+      "email": "meobagabag123@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-environment-and-natural-resources-office",
+    "office_name": "MUNICIPAL ENVIRONMENT AND NATURAL RESOURCES OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": [],
+    "website": "https://bagongbagabag.gov.ph/municipal-and-environmental-office/",
+    "email": "menrobagabag2024@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": null,
+      "email": "menrobagabag2024@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-health-office",
+    "office_name": "MUNICIPAL HEALTH OFFICE (RHU)",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0953-991-2488"],
+    "website": "https://bagongbagabag.gov.ph/municipal-health-office/",
+    "email": "rhubagabag@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0953-991-2488",
+      "email": "rhubagabag@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-local-civil-registry-office",
+    "office_name": "MUNICIPAL LOCAL CIVIL REGISTRY OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["078-362-3817"],
+    "website": "https://bagongbagabag.gov.ph/municipal-civil-registry-office/",
+    "email": "arnold.lopez@yahoo.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "078-362-3817",
+      "email": "arnold.lopez@yahoo.com"
+    }
+  },
+  {
+    "slug": "municipal-planning-and-development-office",
+    "office_name": "MUNICIPAL PLANNING AND DEVELOPMENT OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": [],
+    "website": "https://bagongbagabag.gov.ph/municipal-planning-and-development-office/",
+    "email": "mpdcbagabag.nv@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": null,
+      "email": "mpdcbagabag.nv@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-social-welfare-and-development-office",
+    "office_name": "MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0936-850-2082", "0967-326-9545"],
+    "website": "https://bagongbagabag.gov.ph/municipal-social-and-welfare-office/",
+    "email": "mswdbagabag@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0936-850-2082",
+      "email": "mswdbagabag@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-treasury-office",
+    "office_name": "MUNICIPAL TREASURY OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0936-403-6303"],
+    "website": "https://bagongbagabag.gov.ph/municipal-treasury-office/",
+    "email": "treasuryoffice.lgubagabag@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0936-403-6303",
+      "email": "treasuryoffice.lgubagabag@gmail.com"
+    }
+  },
+  {
+    "slug": "municipal-disaster-risk-reduction-and-management-office",
+    "office_name": "MUNICIPAL DISASTER RISK REDUCTION AND MANAGEMENT OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0967-003-9770"],
+    "website": "https://bagongbagabag.gov.ph/mdrrmo/",
+    "email": "mdrrmo.bagabagnv@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0967-003-9770",
+      "email": "mdrrmo.bagabagnv@gmail.com"
+    }
+  },
+  {
+    "slug": "office-of-the-senior-citizen-and-pwd",
+    "office_name": "OFFICE OF THE SENIOR CITIZEN AND PWD (OSCA)",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0977-782-3692"],
+    "website": "https://bagongbagabag.gov.ph/office-of-the-senior-citizen-and-pwd/",
+    "email": "osca.bagabag2023@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0977-782-3692",
+      "email": "osca.bagabag2023@gmail.com"
+    }
+  },
+  {
+    "slug": "local-youth-development-office",
+    "office_name": "LOCAL YOUTH DEVELOPMENT OFFICE",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
+    "trunkline": ["0906-036-9233"],
+    "website": "https://bagongbagabag.gov.ph/lypd/",
+    "email": "lydobagabag@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0906-036-9233",
+      "email": "lydobagabag@gmail.com"
+    }
+  },
+  {
+    "slug": "pnp-bagabag",
+    "office_name": "PNP BAGABAG",
+    "address": "Bagabag, Nueva Vizcaya",
+    "trunkline": ["0997-700-8181", "0917-506-3958"],
+    "website": "https://bagongbagabag.gov.ph/pnp-bagabag/",
+    "email": "bagabag_ps@yahoo.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0997-700-8181",
+      "email": "bagabag.pcr@gmail.com"
+    }
+  },
+  {
+    "slug": "bfp-bagabag",
+    "office_name": "BFP BAGABAG",
+    "address": "Bagabag, Nueva Vizcaya",
+    "trunkline": ["0975-429-8557", "0917-539-7682"],
+    "website": "https://bagongbagabag.gov.ph/bfp-bagabag/",
+    "email": "bagabagfirestation@gmail.com",
+    "department_head": {
+      "name": "Not yet listed",
+      "contact": "0975-429-8557",
+      "email": "bagabagfirestation@gmail.com"
     }
   }
 ]

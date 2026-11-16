@@ -14,6 +14,7 @@ import {
 
 import { StatCard } from '@/components/ui/StatCard';
 import { Badge } from '@/components/ui/Badge';
+import { EmptyState } from '@/components/ui/EmptyState';
 import {
   ChartTooltip,
   ResponsiveChart,
@@ -56,14 +57,15 @@ export default function PopulationPage() {
   );
   const { municipality, barangays, meta } = populationData;
 
-  const latestMuni = municipality.history[municipality.history.length - 1];
+  const latestMuni =
+    municipality.history[municipality.history.length - 1] ?? null;
   const growth = municipality.growthRates.find(
     r => r.period === '2020-2024'
   )?.rate;
   const sortedBarangaysForLine = useMemo(() => {
     return [...populationData.barangays].sort((a, b) => {
-      const latestA = a.history[a.history.length - 1].population;
-      const latestB = b.history[b.history.length - 1].population;
+      const latestA = a.history[a.history.length - 1]?.population ?? 0;
+      const latestB = b.history[b.history.length - 1]?.population ?? 0;
       return latestB - latestA;
     });
   }, []);
@@ -81,6 +83,17 @@ export default function PopulationPage() {
       return point;
     });
   }, [barangays]);
+
+  if (!latestMuni) {
+    return (
+      <EmptyState
+        title='Population Data Not Loaded Yet'
+        message='Census figures for Bagabag have not been sourced for this portal yet.'
+        actionHref='/statistics'
+        actionLabel='Back to Statistics'
+      />
+    );
+  }
 
   return (
     <>

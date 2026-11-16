@@ -4,10 +4,10 @@
     "name": "Benigno B. Calauad",
     "role": "Mayor",
     "office": "Office of the Mayor",
-    "address": "Municipal Hall, Bagabag, Nueva Vizcaya",
-    "phone": null,
-    "email": null,
-    "website": null,
+    "address": "San Geronimo, Bagabag, Nueva Vizcaya, Philippines, 3711",
+    "phone": "0955-684-9450",
+    "email": "bagabagmo2022@gmail.com",
+    "website": "https://bagongbagabag.gov.ph/mayors-office-2/",
     "isElected": true,
     "personId": "calauad-benigno-b"
   },
@@ -16,10 +16,10 @@
     "name": "Nestor Sevillena",
     "role": "Vice Mayor",
     "office": "Office of the Vice Mayor",
-    "address": "Municipal Hall, Bagabag, Nueva Vizcaya",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
     "phone": null,
-    "email": null,
-    "website": null,
+    "email": "sbbagabag@gmail.com",
+    "website": "https://bagongbagabag.gov.ph/office-of-sangguniang-bayan/",
     "isElected": true,
     "personId": "sevillena-nestor"
   }

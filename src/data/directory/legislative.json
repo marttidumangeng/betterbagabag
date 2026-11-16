@@ -3,72 +3,147 @@
     "slug": "sangguniang-bayan-2025-2028",
     "branch": "Legislative Branch",
     "chamber": "Sangguniang Bayan (2025–2028)",
-    "address": "Municipal Hall, Bagabag, Nueva Vizcaya",
+    "address": "Municipal Hall, San Geronimo, Bagabag, Nueva Vizcaya",
     "trunkline": null,
-    "website": null,
-    "email": null,
+    "website": "https://bagongbagabag.gov.ph/office-of-sangguniang-bayan/",
+    "email": "sbbagabag@gmail.com",
     "officials": [
       {
         "role": "Municipal Councilor",
-        "name": "Francisco Bayatan Jr.",
+        "name": "Francisco E. Bayatan, Jr.",
         "website": null,
-        "personId": "bayatan-francisco-jr"
+        "personId": "bayatan-francisco-e-jr"
       },
       {
         "role": "Municipal Councilor",
-        "name": "Eulogio Dela Cueva",
+        "name": "Eulogio B. Dela Cueva",
         "website": null,
-        "personId": "dela-cueva-eulogio"
+        "personId": "dela-cueva-eulogio-b"
       },
       {
         "role": "Municipal Councilor",
-        "name": "Marnilo Carbonel",
+        "name": "Marnilo G. Carbonel",
         "website": null,
-        "personId": "carbonel-marnilo"
+        "personId": "carbonel-marnilo-g"
       },
       {
         "role": "Municipal Councilor",
-        "name": "Chic Afan",
+        "name": "Nickolette V. Afan",
         "website": null,
-        "personId": "afan-chic"
+        "personId": "afan-nickolette-v"
       },
       {
         "role": "Municipal Councilor",
-        "name": "Mario Afalla",
+        "name": "Mario T. Afalla",
         "website": null,
-        "personId": "afalla-mario"
+        "personId": "afalla-mario-t"
       },
       {
         "role": "Municipal Councilor",
-        "name": "Bryan Sevillena",
+        "name": "Bryan C. Sevillena",
         "website": null,
-        "personId": "sevillena-bryan"
+        "personId": "sevillena-bryan-c"
       },
       {
         "role": "Municipal Councilor",
-        "name": "Bebet Mercado",
+        "name": "Nieves Ann B. Mercado",
         "website": null,
-        "personId": "mercado-bebet"
+        "personId": "mercado-nieves-ann-b"
       },
       {
         "role": "Municipal Councilor",
-        "name": "Romeo Bulan",
+        "name": "Romeo G. Bulan",
         "website": null,
-        "personId": "bulan-romeo"
+        "personId": "bulan-romeo-g"
       },
       {
         "role": "Liga ng mga Barangay President",
-        "name": "Not yet listed",
+        "name": "Orlando Naval, Sr.",
         "website": null,
-        "personId": "abc-president-tbc"
+        "personId": "naval-orlando-sr"
       },
       {
         "role": "SK Federation President",
-        "name": "Not yet listed",
+        "name": "Jhanista Ingrid R. Garnace",
         "website": null,
-        "personId": "sk-federation-president-tbc"
+        "personId": "garnace-jhanista-ingrid-r"
+      },
+      {
+        "role": "Indigenous Peoples Mandatory Representative",
+        "name": "Roger B. Whigan",
+        "website": null,
+        "personId": "whigan-roger-b"
       }
     ],
-    "permanent_committees": []
+    "permanent_committees": [
+      {
+        "committee": "Agriculture, Livelihood, Accreditation of Cooperatives, NGOs/POs and Other Organizations",
+        "chairperson": "Mario T. Afalla"
+      },
+      {
+        "committee": "Barangay Affairs",
+        "chairperson": "Orlando Naval, Sr."
+      },
+      {
+        "committee": "Environmental Protection, Climate Change and Natural Resources",
+        "chairperson": "Romeo G. Bulan"
+      },
+      {
+        "committee": "Education, Human Resources Development and Awards",
+        "chairperson": "Eulogio B. Dela Cueva"
+      },
+      {
+        "committee": "Finance, Budget, Appropriations, Ways and Means",
+        "chairperson": "Marnilo G. Carbonel"
+      },
+      {
+        "committee": "Health and Sanitation",
+        "chairperson": "Nieves Ann B. Mercado"
+      },
+      {
+        "committee": "Indigenous Peoples / Indigenous Communities",
+        "chairperson": "Roger B. Whigan"
+      },
+      {
+        "committee": "Infrastructure, Zoning and Land Use",
+        "chairperson": "Mario T. Afalla"
+      },
+      {
+        "committee": "Labor, Manpower and Trainings",
+        "chairperson": "Roger B. Whigan"
+      },
+      {
+        "committee": "Legal Affairs, Justice, Human Rights, Drugs and Rehabilitation",
+        "chairperson": "Eulogio B. Dela Cueva"
+      },
+      {
+        "committee": "Peace, Order, Public Safety and Risk Reduction Management",
+        "chairperson": "Francisco E. Bayatan, Jr."
+      },
+      {
+        "committee": "Rules, Good Government, Ethics and Oversight",
+        "chairperson": "Marnilo G. Carbonel"
+      },
+      {
+        "committee": "Social Welfare, Women, Children, Senior Citizens and Family",
+        "chairperson": "Nickolette V. Afan"
+      },
+      {
+        "committee": "Trade, Commerce and Industry",
+        "chairperson": "Bryan C. Sevillena"
+      },
+      {
+        "committee": "Transportation, Public Utilities and Telecommunications",
+        "chairperson": "Francisco E. Bayatan, Jr."
+      },
+      {
+        "committee": "Tourism, Culture and the Arts",
+        "chairperson": "Nickolette V. Afan"
+      },
+      {
+        "committee": "Youth and Sports Development",
+        "chairperson": "Jhanista Ingrid R. Garnace"
+      }
+    ]
   }
 ]
