@@ -9,7 +9,7 @@ Facts used on BetterBagabag. Each entry records the URL and the date it was read
 | Town centre coordinates | 16.6055376°N, 121.2533079°E | [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/ui/details.html?osmtype=N&osmid=198510453) (node 198510453, Bagabag) | 2026-11-15 |
 | Province website | https://nuevavizcaya.gov.ph | [Province of Nueva Vizcaya](https://nuevavizcaya.gov.ph) | 2026-11-15 |
 | DPWH district engineering office | Nueva Vizcaya DEO | Bagabag FY 2027 budget lines on [betterbagabag.org](https://betterbagabag.org) name "DPWH Nueva Vizcaya DEO" | 2026-11-15 |
-| Facebook (social) | https://www.facebook.com/MayorBenCalauad | Confirmed by Martti Dumangeng for this portal | 2026-11-15 |
+| Facebook (social) | *(empty)* | Martti, 2026-11-16: left out for now. The mayor's page (MayorBenCalauad) may be his personal page, so it is not used as the portal's link or on the Office of the Mayor | 2026-11-16 |
 | Discord | https://discord.gg/dA6tkU4FYS | BetterGov.ph community server (kept from Better Los Baños template intentionally) | 2026-11-15 |
 | Official LGU website | *(empty)* | `www.lgu-bagabag.gov.ph` listed in directories but returned HTTP 444 / unreachable on 2026-11-15; left empty until Martti confirms a working URL | 2026-11-15 |
 | Contact email | *(empty)* | Martti: TBC | 2026-11-15 |

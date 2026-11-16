@@ -180,6 +180,7 @@ export const footerNavigation = {
       ],
     },
   ],
+  // Links left empty in config/lgu.config.json are not shown.
   socialLinks: [
     {
       label: 'Facebook',
@@ -196,5 +197,5 @@ export const footerNavigation = {
       href: config.portal.githubUrl,
       target: '_blank',
     },
-  ],
+  ].filter(link => link.href),
 };
