@@ -19,7 +19,7 @@
     "footerBrandName": "Better Bagabag",
     "logoWhitePath": "/logos/svg/betterbagabag-icon-white.svg",
     "navbarLogoPath": "/logos/svg/betterbagabag-icon-colored.svg",
-    "defaultOgImagePath": "/logos/svg/betterbagabag-icon-colored.svg",
+    "defaultOgImagePath": "/share/betterbagabag.png",
     "faviconPath": "/logos/png/betterbagabag-banner-colored.png",
     "faviconSvgPath": "/logos/svg/betterbagabag-logo-primary.svg",
     "appleTouchIconPath": "/logos/png/betterbagabag-banner-inverted.png",
