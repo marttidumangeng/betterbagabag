@@ -27,7 +27,7 @@ https://betterbagabag.org/api/
    curl https://betterbagabag.org/api/weather
    ```
 
-2. **Contribution Flow** - Community contributions are submitted via [GitHub Issues](https://github.com/BetterLosBanos/betterlb/issues/new?template=contribution.yml) using the contribution issue template. The `/contribute` page on the site links users directly to GitHub.
+2. **Contribution Flow** - Community contributions are submitted via [GitHub Issues](https://github.com/marttidumangeng/betterbagabag/issues/new) using the contribution issue template. The `/contribute` page on the site links users directly to GitHub.
 
 ### Admin APIs (Authentication Required)
 
@@ -73,7 +73,7 @@ curl https://betterbagabag.org/api/openlgu/terms
 
 | API | Description | Authentication |
 |-----|-------------|----------------|
-| [Weather API](./weather-api.md) | Current weather and 3-hour forecast for Los Baños | None |
+| [Weather API](./weather-api.md) | Current weather and 3-hour forecast for Bagabag | None |
 | [Contribution API](./contribution-api.md) | Create GitHub issues for community contributions | None |
 | [OpenLGU API](./openlgu-api.md) | Legislative documents, persons, terms, sessions, committees | None |
 
@@ -318,7 +318,7 @@ curl "https://betterbagabag.org/api/admin/audit-logs?action=create_document&limi
 
 All public APIs support CORS for authorized origins:
 
-- **Production:** `https://betterlb.pages.dev`, `https://betterbagabag.org`
+- **Production:** `https://betterbagabag.org`
 - **Development:** `http://localhost:5173`, `http://localhost:8788`
 
 **CORS Headers:**
@@ -407,7 +407,7 @@ documents = response.json()
 curl https://betterbagabag.org/api/weather
 
 # Weather API (specific city)
-curl "https://betterbagabag.org/api/weather?city=Los Baños"
+curl "https://betterbagabag.org/api/weather?city=Bagabag"
 
 # Weather API (force update)
 curl "https://betterbagabag.org/api/weather?update=true"
@@ -446,7 +446,7 @@ curl -X POST https://betterbagabag.org/api/admin/documents \
 ## Support
 
 - **Documentation:** See individual API documentation files
-- **Issues:** [GitHub Issues](https://github.com/bettergovph/betterlb/issues)
+- **Issues:** [GitHub Issues](https://github.com/marttidumangeng/betterbagabag/issues)
 - **Contributions:** Use the [Contribution API](./contribution-api.md)
 
 ---
