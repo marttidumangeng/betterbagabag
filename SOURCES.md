@@ -15,7 +15,7 @@ Facts used on BetterBagabag. Each entry records the URL and the date it was read
 | LGU hall address | San Geronimo, Bagabag, Nueva Vizcaya, Philippines, 3711 | [Contact Us](https://bagongbagabag.gov.ph/contact-us/) | 2026-11-16 |
 | Mayor’s Office phone / email | 0955-684-9450 / bagabagmo2022@gmail.com | [Contact Us](https://bagongbagabag.gov.ph/contact-us/) and [Mayor’s Office](https://bagongbagabag.gov.ph/mayors-office-2/) | 2026-11-16 |
 | Portal contact email | *(empty)* | Martti: TBC (distinct from LGU mayor’s office email) | 2026-11-15 |
-| PhilGEPS organization name | MUNICIPALITY OF BAGABAG, NUEVA VIZCAYA | Expected PhilGEPS form; verify against MeiliSearch in Phase 4 | 2026-11-15 |
+| PhilGEPS organization name | MUNICIPALITY OF BAGABAG, NUEVA VIZCAYA | Active PhilGEPS buyer listing on [datagemba](https://ph.datagemba.com/companies/view/MUNICIPALITY-OF-BAGABAG-NUEVA-VIZCAYA/4286) and awards mirror on [Love the Philippines](https://lovethephilippines.com/agencies/offices/3219232e-322b-496c-bf8e-c03aeb4795f4) | 2026-11-16 |
 
 ## Brand
 
@@ -32,9 +32,9 @@ Facts used on BetterBagabag. Each entry records the URL and the date it was read
 | Vice Mayor | Nestor Sevillena (LAKAS), 8,580 votes | Same Rappler page | 2026-11-15 |
 | Sangguniang Bayan (top 8 by votes) | Francisco Bayatan Jr.; Eulogio Dela Cueva; Marnilo Carbonel; Chic Afan; Mario Afalla; Bryan Sevillena; Bebet Mercado; Romeo Bulan | [PeoPlaid Bagabag 2025 results](https://peoplaid.com/2025/05/09/bagabag-election-2025-results-winners/) (full councilor tally; Rappler page scrape was incomplete for mid-list councilors) | 2026-11-15 |
 | Formal SB names (middle initials) | Francisco E. Bayatan, Jr.; Eulogio B. Dela Cueva; Marnilo G. Carbonel; Nickolette V. Afan; Mario T. Afalla; Bryan C. Sevillena; Nieves Ann B. Mercado; Romeo G. Bulan | [Office of Sangguniang Bayan](https://bagongbagabag.gov.ph/office-of-sangguniang-bayan/) (12th SB Standing Committees 2025–2028) | 2026-11-16 |
-| Liga ng mga Barangay President | Orlando Naval, Sr. | Same SB page: Chairperson of Committee on Barangay Affairs; not among the eight elected councilors. Site does not print the words “ABC” / “Liga”; role inferred from that chair + ex-officio pattern | 2026-11-16 |
-| SK Federation President | Jhanista Ingrid R. Garnace | Same SB page: Chairperson of Committee on Youth and Sports Development; not among the eight elected councilors | 2026-11-16 |
-| Indigenous Peoples Mandatory Representative | Roger B. Whigan | Same SB page: Chairperson of Committee on Indigenous Peoples / Indigenous Communities; not among the eight elected councilors | 2026-11-16 |
+| Liga ng mga Barangay President | Orlando Baclig Naval, Sr. | SB page Chairperson of Committee on Barangay Affairs; also listed as Punong Barangay of Lantap (2023–2026) on [barangaydirectory Lantap](https://www.barangaydirectory.com/barangay/bagabag/lantap). Province page still shows Ronald Quiaoit (prior term; Quiaoit remains Murong PB) | 2026-11-16 |
+| SK Federation President | Jhanista Ingrid Raguindin Garnace | SB page Chairperson of Youth and Sports; also Careb SK Chairperson (2023–2026) on [barangaydirectory Careb](https://www.barangaydirectory.com/barangay/bagabag/careb). Province page still shows Jezsa Mia Cadiente (prior term) | 2026-11-16 |
+| Indigenous Peoples Mandatory Representative | Roger B. Whigan | SB page Chairperson of Indigenous Peoples / Indigenous Communities; not among the eight elected councilors. Earlier Gaddang-org coverage names Roger Whigan of San Geronimo | 2026-11-16 |
 | SB standing committees (17) | Chairs as in `legislative.json` | [Office of Sangguniang Bayan](https://bagongbagabag.gov.ph/office-of-sangguniang-bayan/) | 2026-11-16 |
 | SB email | sbbagabag@gmail.com | Same SB page contact block | 2026-11-16 |
 
@@ -82,7 +82,10 @@ Mayor’s Office vision / mission text (not yet shown on BetterBagabag UI): from
 | Fact | Value | Source | Read |
 |---|---|---|---|
 | 17 barangay names | Bakir, Baretbet, Careb, Lantap, Murong, Nangalisan, Paniki, Pogonsino, Quirino, San Geronimo, San Pedro, Santa Cruz, Santa Lucia, Tuao North, Tuao South, Villa Coloma, Villaros | PSA PSGC municipality [0205003000](https://psa.gov.ph/classification/psgc/barangays/0205003000) (via Wikidata property claim / Scene.ph atlas citing PSA PSGC); also listed under Barangays on bagongbagabag.gov.ph | 2026-11-15 |
-| Punong barangay names | TODO | Individual barangay pages on bagongbagabag.gov.ph have history only; no current Punong Barangay listed (2026-11-16) | 2026-11-16 |
+| Punong barangay (8 of 17, 2023–2026 term) | Baretbet: Vilma Langayo Lu Ong; Careb: Alexander Ramos Ancheta; Lantap: Orlando Baclig Naval, Sr.; Murong: Ronald Buen Quiaoit; Paniki: Nolando Cawagdan Saturno; Pogonsino: Mary Jane Albano Abad; Quirino: Alex Palaruan Lodriguito; San Geronimo: Wilson Callueng Cansino | [barangaydirectory.com](https://www.barangaydirectory.com/) Bagabag pages (Verified data; read via search snippets 2026-11-16 after live site returned 503 Deployment Paused) | 2026-11-16 |
+| Punong barangay (remaining 9) | Bakir, Nangalisan, San Pedro, Santa Cruz, Santa Lucia, Tuao North, Tuao South, Villa Coloma, Villaros | Still TODO. Santa Lucia directory page says “being verified against DILG masterlist”. 2018 zamboanga.com results and a 2024 San Pedro BADAC EO (Romeo G. Bulan) are not used as current captains without a 2023–2026 directory hit | 2026-11-16 |
+| Municipal Treasurer | Janette Santiago | Named Municipal Treasurer in [DTI Region 2 news, 26 July 2024](https://www.dti.gov.ph/archives/regional-archives/region-2-news-archives/dti-campaigns-enhanced-incentives-micro-enterprises-nueva-vizcaya/) (meeting with Mayor Calauad) | 2026-11-16 |
+| BPLO / LRCO I | Jendy Pontillas | Same DTI article; not yet a separate directory office row | 2026-11-16 |
 
 ## Statistics
 
@@ -105,6 +108,6 @@ Mayor’s Office vision / mission text (not yet shown on BetterBagabag UI): from
 | Fact | Status |
 |---|---|
 | Citizen’s Charter services | Cleared Los Baños data; 16 office PDFs published at [Citizen’s Charter](https://bagongbagabag.gov.ph/citizens-charter-2/) under `/wp-content/uploads/2026/03/CC-*.pdf` — not yet ingested into `services.json` |
-| Department heads | Still TODO (names). Emails/phones harvested 2026-11-16 |
+| Department heads | Treasurer Janette Santiago sourced 2026-11-16; other appointed heads still TODO. Emails/phones harvested |
 | Tourism media | Placeholder only; Martti asked to use https://www.facebook.com/MayorBenCalauad after rights clearance |
 | Full Disclosure / budget PDFs on LGU site | e.g. [Annual Budget Report 2025](https://bagongbagabag.gov.ph/wp-content/uploads/2026/04/Annual-Budget-Report-2025.pdf), [APP 2025](https://bagongbagabag.gov.ph/wp-content/uploads/2026/04/Annual-Procurement-Plan-2025.pdf) — not yet mirrored |

@@ -16,12 +16,14 @@
     "slug": "barangay-baretbet",
     "barangay_name": "Baretbet",
     "address": "Barangay Hall, Baretbet, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "0920-704-2421"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/baretbet",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Vilma Langayo Lu Ong"
       }
     ]
   },
@@ -29,12 +31,14 @@
     "slug": "barangay-careb",
     "barangay_name": "Careb",
     "address": "Barangay Hall, Careb, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "078-392-0390"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/careb",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Alexander Ramos Ancheta"
       }
     ]
   },
@@ -42,12 +46,14 @@
     "slug": "barangay-lantap",
     "barangay_name": "Lantap",
     "address": "Barangay Hall, Lantap, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "078-392-3509"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/lantap",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Orlando Baclig Naval, Sr."
       }
     ]
   },
@@ -55,12 +61,14 @@
     "slug": "barangay-murong",
     "barangay_name": "Murong",
     "address": "Barangay Hall, Murong, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "078-430-0245"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/murong",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Ronald Buen Quiaoit"
       }
     ]
   },
@@ -81,12 +89,14 @@
     "slug": "barangay-paniki",
     "barangay_name": "Paniki",
     "address": "Barangay Hall, Paniki, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "078-362-4798"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/paniki",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Nolando Cawagdan Saturno"
       }
     ]
   },
@@ -94,12 +104,14 @@
     "slug": "barangay-pogonsino",
     "barangay_name": "Pogonsino",
     "address": "Barangay Hall, Pogonsino, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "078-392-3328"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/pogonsino",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Mary Jane Albano Abad"
       }
     ]
   },
@@ -107,12 +119,14 @@
     "slug": "barangay-quirino",
     "barangay_name": "Quirino",
     "address": "Barangay Hall, Quirino, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "078-392-0523"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/quirino",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Alex Palaruan Lodriguito"
       }
     ]
   },
@@ -120,12 +134,14 @@
     "slug": "barangay-san-geronimo",
     "barangay_name": "San Geronimo",
     "address": "Barangay Hall, San Geronimo, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "0905-608-4271"
+    ],
+    "website": "https://www.barangaydirectory.com/barangay/bagabag/san-geronimo",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Wilson Callueng Cansino"
       }
     ]
   },

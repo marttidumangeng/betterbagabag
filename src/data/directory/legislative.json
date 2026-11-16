@@ -58,15 +58,15 @@
       },
       {
         "role": "Liga ng mga Barangay President",
-        "name": "Orlando Naval, Sr.",
+        "name": "Orlando Baclig Naval, Sr.",
         "website": null,
-        "personId": "naval-orlando-sr"
+        "personId": "naval-orlando-baclig-sr"
       },
       {
         "role": "SK Federation President",
-        "name": "Jhanista Ingrid R. Garnace",
+        "name": "Jhanista Ingrid Raguindin Garnace",
         "website": null,
-        "personId": "garnace-jhanista-ingrid-r"
+        "personId": "garnace-jhanista-ingrid-raguindin"
       },
       {
         "role": "Indigenous Peoples Mandatory Representative",
@@ -82,7 +82,7 @@
       },
       {
         "committee": "Barangay Affairs",
-        "chairperson": "Orlando Naval, Sr."
+        "chairperson": "Orlando Baclig Naval, Sr."
       },
       {
         "committee": "Environmental Protection, Climate Change and Natural Resources",
@@ -142,7 +142,7 @@
       },
       {
         "committee": "Youth and Sports Development",
-        "chairperson": "Jhanista Ingrid R. Garnace"
+        "chairperson": "Jhanista Ingrid Raguindin Garnace"
       }
     ]
   }

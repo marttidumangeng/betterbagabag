@@ -20,13 +20,13 @@ Written 2026-11-15. Phases 1–5 done locally. Phase 6 waits for Martti’s go-a
 ## Martti must supply
 
 1. **Contact email** for the portal (TBC). LGU mayor’s office email is already on the directory (`bagabagmo2022@gmail.com`); that is not the portal inbox.
-2. **Punong barangay** for each of the 17 barangays (official barangay pages have history only).
-3. Confirm **ABC / SK / IPMR** labels for Orlando Naval, Sr. / Jhanista Ingrid R. Garnace / Roger B. Whigan (sourced as committee chairs on the official SB page; titles inferred).
-4. **Citizen’s Charter** ingestion — 16 office PDFs are live on bagongbagabag.gov.ph; services JSON still empty.
-5. **Municipal office head names** (emails/phones harvested; heads still “Not yet listed”).
-6. **Tourism spots + photos/videos**, with rights clearance (placeholder only for now). The mayor's Facebook page was suggested as a source, but it may be personal, so ask before using anything from it.
-7. **Portal Facebook page**, if BetterBagabag gets one (left empty; the mayor's page is not used).
-8. Confirm **PhilGEPS org string** `MUNICIPALITY OF BAGABAG, NUEVA VIZCAYA` against live MeiliSearch results (Santo Tomas, Isabela also has a Bagabag barangay).
+2. **Punong barangay** for the remaining 9: Bakir, Nangalisan, San Pedro, Santa Cruz, Santa Lucia, Tuao North, Tuao South, Villa Coloma, Villaros (8 filled from barangaydirectory 2023–2026).
+3. **Citizen’s Charter** ingestion — 16 office PDFs are live on bagongbagabag.gov.ph; services JSON still empty.
+4. **Municipal office head names** beyond Treasurer Janette Santiago (emails/phones harvested; other heads still “Not yet listed”).
+5. **Tourism spots + photos/videos**, with rights clearance (placeholder only for now). The mayor's Facebook page was suggested as a source, but it may be personal, so ask before using anything from it.
+6. **Portal Facebook page**, if BetterBagabag gets one (left empty; the mayor's page is not used).
+
+ABC/SK/IPMR and PhilGEPS org string are treated as confirmed enough for the directory (see `SOURCES.md`); MeiliSearch live check still optional.
 
 ## Harvested 2026-11-16 from bagongbagabag.gov.ph
 
