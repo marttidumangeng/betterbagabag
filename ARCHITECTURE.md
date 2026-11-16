@@ -1,6 +1,6 @@
-# BetterLB Architecture
+# BetterBagabag Architecture
 
-High-level architecture overview for developers working on BetterLB.
+High-level architecture overview for developers working on BetterBagabag.
 
 ---
 
@@ -172,11 +172,11 @@ Component testing for complex UI components.
 
 ## Deployment
 
-### Production (BetterLB)
+### Production (BetterBagabag)
 - **Platform:** Cloudflare Pages
-- **Database:** D1 `betterlb-openlgu`
+- **Database:** D1 `betterbagabag-openlgu`
 - **Search:** Self-hosted Meilisearch
-- **Domain:** betterlb.org
+- **Domain:** betterbagabag.org
 - **Wrangler:** 4.155.0 (pinned for compatibility)
 
 ### For Other LGUs

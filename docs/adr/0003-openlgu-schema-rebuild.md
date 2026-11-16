@@ -22,6 +22,6 @@ The initial schema (migrations 001-004) accumulated technical debt: duplicate ma
 
 ## Upgrade path
 
-1. `wrangler d1 export betterlb_openlgu --remote --output=backup.sql`
+1. `wrangler d1 export betterbagabag_openlgu --remote --output=backup.sql`
 2. Apply `001_initial_schema.sql` (clean schema) + `002_baseline_data.sql` (seed)
 3. Run `scripts/openlgu/migrate-data.cjs` to transform and import old data

@@ -105,7 +105,7 @@
       "office_division": "MUNICIPAL ENGINEERING OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "Prospective house and/or building owners within the jurisdiction of Los Baños",
+      "who_may_avail": "Prospective house and/or building owners within the jurisdiction of Bagabag",
       "requirements": [
         {
           "requirement": "Five (5) copies of filled-up and Notarized Unified Application Form for Building Permit",
@@ -199,7 +199,7 @@
       "office_division": "MUNICIPAL ENGINEERING OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2B (Government to Business)",
-      "who_may_avail": "Business Establishment Owners within the jurisdiction of Los Baños",
+      "who_may_avail": "Business Establishment Owners within the jurisdiction of Bagabag",
       "requirements": [
         {
           "requirement": "Business License Application Form",
@@ -251,7 +251,7 @@
       "office_division": "MUNICIPAL ENGINEERING OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2G (Government to Government) / G2C (Government to Citizen)",
-      "who_may_avail": "Electrical Service Provider Applicant within the jurisdiction of Los Baños",
+      "who_may_avail": "Electrical Service Provider Applicant within the jurisdiction of Bagabag",
       "requirements": [
         {
           "requirement": "Properly Fill-up CEI Form",
@@ -325,7 +325,7 @@
       "office_division": "MUNICIPAL ENGINEERING OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2G (Government to Government) / G2C (Government to Citizen)",
-      "who_may_avail": "House and/or building owners within the jurisdiction of Los Baños",
+      "who_may_avail": "House and/or building owners within the jurisdiction of Bagabag",
       "requirements": [
         {
           "requirement": "Properly Fill-up Two (2) Copies of Unified Application Form and Four (4) Copies of Certificate of Completion Form",
@@ -402,7 +402,7 @@
       "office_division": "MUNICIPAL ENGINEERING OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2G (Government to Government) / G2C (Government to Citizen)",
-      "who_may_avail": "House and/or building owners within the jurisdiction of Los Baños",
+      "who_may_avail": "House and/or building owners within the jurisdiction of Bagabag",
       "requirements": [
         {
           "requirement": "Documents from Transportation Regulatory Unit",
@@ -1045,7 +1045,7 @@
       "office_division": "MUNICIPAL AGRICULTURE OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "All residents of Los Baños",
+      "who_may_avail": "All residents of Bagabag",
       "requirements": [
         {
           "requirement": "None",
@@ -1092,7 +1092,7 @@
       "office_division": "MUNICIPAL AGRICULTURE OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "All residents of Los Baños",
+      "who_may_avail": "All residents of Bagabag",
       "requirements": [
         {
           "requirement": "Request letter",
@@ -1160,7 +1160,7 @@
       "office_division": "MUNICIPAL AGRICULTURE OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "All residents of Los Baños",
+      "who_may_avail": "All residents of Bagabag",
       "requirements": [
         {
           "requirement": "None",
@@ -1192,7 +1192,7 @@
       "office_division": "MUNICIPAL AGRICULTURE OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "All residents of Los Baños",
+      "who_may_avail": "All residents of Bagabag",
       "requirements": [
         {
           "requirement": "None",
@@ -1219,7 +1219,7 @@
       "office_division": "MUNICIPAL AGRICULTURE OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "All residents of Los Baños",
+      "who_may_avail": "All residents of Bagabag",
       "requirements": [
         {
           "requirement": "Vaccination record, plate number, handler's license, transport carrier license (for Animal Health Certificate)",
@@ -2786,7 +2786,7 @@
       "office_division": "LOCAL YOUTH AND DEVELOPMENT OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "Youth organizations in Los Baños",
+      "who_may_avail": "Youth organizations in Bagabag",
       "requirements": [
         {
           "requirement": "Accomplished Registration Form",
@@ -2839,7 +2839,7 @@
       "office_division": "LOCAL YOUTH AND DEVELOPMENT OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "Athletes who won in competitions representing Los Baños",
+      "who_may_avail": "Athletes who won in competitions representing Bagabag",
       "requirements": [
         {
           "requirement": "Certificate of Participation/Award",
@@ -2888,7 +2888,7 @@
       "office_division": "LOCAL YOUTH AND DEVELOPMENT OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "Deserving students of Los Baños",
+      "who_may_avail": "Deserving students of Bagabag",
       "requirements": [
         {
           "requirement": "Application Form",
@@ -2950,7 +2950,7 @@
       "office_division": "LOCAL YOUTH AND DEVELOPMENT OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "Residents of Los Baños",
+      "who_may_avail": "Residents of Bagabag",
       "requirements": [
         {
           "requirement": "Valid ID",
@@ -3045,7 +3045,7 @@
       "office_division": "MUNICIPAL AGRICULTURE OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "All residents of Los Baños and associations/organizations",
+      "who_may_avail": "All residents of Bagabag and associations/organizations",
       "requirements": [
         {
           "requirement": "None",
@@ -3077,7 +3077,7 @@
       "office_division": "MUNICIPAL AGRICULTURE OFFICE",
       "classification": "Simple",
       "type_of_transaction": "G2C (Government to Citizen)",
-      "who_may_avail": "All residents of Los Baños",
+      "who_may_avail": "All residents of Bagabag",
       "requirements": [
         {
           "requirement": "None",
@@ -6298,7 +6298,7 @@
         {
           "step": 4,
           "action": "Conduct tour",
-          "agency_action": "Facilitate Lakbay Los Baños tour"
+          "agency_action": "Facilitate Lakbay Bagabag tour"
         }
       ],
       "fees": {
@@ -7407,7 +7407,7 @@
       "office_division": "SANGGUNIANG BAYAN",
       "classification": "Complex",
       "type_of_transaction": "G2C (Government to Citizen) / G2B (Government to Business)",
-      "who_may_avail": "Civil Society Organizations operating in Los Baños",
+      "who_may_avail": "Civil Society Organizations operating in Bagabag",
       "requirements": [
         {
           "requirement": "Letter of Application",

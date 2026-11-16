@@ -1,6 +1,6 @@
 # Meilisearch Integration Guide
 
-This guide documents how Better LB integrates with [BetterGov's Meilisearch instance](https://search2.bettergov.ph) to display filtered transparency data for the Municipality of Los Baños. The key insight is that we leverage BetterGov.ph's existing Meilisearch infrastructure and national datasets—filtering and searching only for data relevant to our specific LGU.
+This guide documents how BetterBagabag integrates with [BetterGov's Meilisearch instance](https://search2.bettergov.ph) to display filtered transparency data for the Municipality of Bagabag. The key insight is that we leverage BetterGov.ph's existing Meilisearch infrastructure and national datasets—filtering and searching only for data relevant to our specific LGU.
 
 Other LGUs can follow this same pattern to implement their own transparency portals without setting up their own Meilisearch instances or scraping data.
 
@@ -18,7 +18,7 @@ Other LGUs can follow this same pattern to implement their own transparency port
 
 ## Overview
 
-Better LB leverages **BetterGov.ph's existing Meilisearch infrastructure** to display transparency data. We don't host any national data ourselves—we simply query BetterGov's public search endpoint with filters for our specific LGU.
+BetterBagabag leverages **BetterGov.ph's existing Meilisearch infrastructure** to display transparency data. We don't host any national data ourselves—we simply query BetterGov's public search endpoint with filters for our specific LGU.
 
 | Feature | Data Source | How We Access It |
 |---------|-------------|------------------|
@@ -65,7 +65,7 @@ Better LB leverages **BetterGov.ph's existing Meilisearch infrastructure** to di
 
 ## Architecture
 
-Better LB follows a **"filter-downstream"** pattern—we don't host or scrape any national data ourselves. Instead, we query BetterGov's existing Meilisearch instance with LGU-specific filters.
+BetterBagabag follows a **"filter-downstream"** pattern—we don't host or scrape any national data ourselves. Instead, we query BetterGov's existing Meilisearch instance with LGU-specific filters.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -82,7 +82,7 @@ Better LB follows a **"filter-downstream"** pattern—we don't host or scrape an
                                     │ (organization_name, region, province, etc.)
                                     ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         YOUR LGU FRONTEND (Better LB)                       │
+│                         YOUR LGU FRONTEND (BetterBagabag)                       │
 │  ┌─────────────────────────────────────────────────────────────────────┐   │
 │  │  /src/lib/meilisearch.ts                                             │   │
 │  │  - Configured to point to search2.bettergov.ph                       │   │
@@ -500,7 +500,7 @@ Always attribute BetterGov.ph as the data source:
 
 ---
 
-## Required Files from Better LB
+## Required Files from BetterBagabag
 
 You can implement this integration in two ways:
 
@@ -573,13 +573,13 @@ These components are used by the page components. You can use your own UI librar
 ### Quick Start - Minimal Copy
 
 ```bash
-# Clone Better LB to examine files
-git clone https://github.com/BetterLosBanos/betterlb.git temp-betterlb
+# Clone BetterBagabag to examine files
+git clone https://github.com/marttidumangeng/betterbagabag.git temp-betterbagabag
 
 # Copy ONLY the core files
 mkdir -p YOUR_PROJECT/src/lib
-cp temp-betterlb/src/lib/meilisearch.ts YOUR_PROJECT/src/lib/
-cp temp-betterlb/src/lib/format.ts YOUR_PROJECT/src/lib/
+cp temp-betterbagabag/src/lib/meilisearch.ts YOUR_PROJECT/src/lib/
+cp temp-betterbagabag/src/lib/format.ts YOUR_PROJECT/src/lib/
 
 # Now you can use the Meilisearch client in your existing components!
 ```
@@ -587,24 +587,24 @@ cp temp-betterlb/src/lib/format.ts YOUR_PROJECT/src/lib/
 ### Quick Start - Full Copy
 
 ```bash
-# Clone Better LB
-git clone https://github.com/BetterLosBanos/betterlb.git temp-betterlb
+# Clone BetterBagabag
+git clone https://github.com/marttidumangeng/betterbagabag.git temp-betterbagabag
 
 # Copy core files
-cp temp-betterlb/src/lib/meilisearch.ts YOUR_PROJECT/src/lib/
-cp temp-betterlb/src/lib/format.ts YOUR_PROJECT/src/lib/
+cp temp-betterbagabag/src/lib/meilisearch.ts YOUR_PROJECT/src/lib/
+cp temp-betterbagabag/src/lib/format.ts YOUR_PROJECT/src/lib/
 
 # Copy page components
 mkdir -p YOUR_PROJECT/src/pages/transparency/infrastructure
-cp temp-betterlb/src/pages/transparency/procurement/index.tsx YOUR_PROJECT/src/pages/transparency/
-cp temp-betterlb/src/pages/transparency/infrastructure/index.tsx YOUR_PROJECT/src/pages/transparency/infrastructure/
-cp temp-betterlb/src/pages/transparency/infrastructure/\[project\].tsx YOUR_PROJECT/src/pages/transparency/infrastructure/
-cp temp-betterlb/src/pages/transparency/layout.tsx YOUR_PROJECT/src/pages/transparency/
+cp temp-betterbagabag/src/pages/transparency/procurement/index.tsx YOUR_PROJECT/src/pages/transparency/
+cp temp-betterbagabag/src/pages/transparency/infrastructure/index.tsx YOUR_PROJECT/src/pages/transparency/infrastructure/
+cp temp-betterbagabag/src/pages/transparency/infrastructure/\[project\].tsx YOUR_PROJECT/src/pages/transparency/infrastructure/
+cp temp-betterbagabag/src/pages/transparency/layout.tsx YOUR_PROJECT/src/pages/transparency/
 
 # Copy UI components (if you don't have your own)
-cp -r temp-betterlb/src/components/ui YOUR_PROJECT/src/components/
-cp -r temp-betterlb/src/components/data-display YOUR_PROJECT/src/components/
-cp -r temp-betterlb/src/components/layout YOUR_PROJECT/src/components/
+cp -r temp-betterbagabag/src/components/ui YOUR_PROJECT/src/components/
+cp -r temp-betterbagabag/src/components/data-display YOUR_PROJECT/src/components/
+cp -r temp-betterbagabag/src/components/layout YOUR_PROJECT/src/components/
 
 # Update the filter constants in the copied page files for your LGU
 ```
@@ -613,7 +613,7 @@ cp -r temp-betterlb/src/components/layout YOUR_PROJECT/src/components/
 
 ## Cloudflare Pages Deployment
 
-Better LB is deployed on Cloudflare Pages. Here's how to configure environment variables for your deployment:
+BetterBagabag is deployed on Cloudflare Pages. Here's how to configure environment variables for your deployment:
 
 ### Setting Environment Variables in Cloudflare Pages
 
@@ -801,6 +801,6 @@ interface DPWHProject {
 ## Contributing
 
 To improve this guide or report issues:
-1. Open an issue on the Better LB GitHub repository
+1. Open an issue on the BetterBagabag GitHub repository
 2. Submit a PR with documentation updates
 3. Share your LGU's implementation for case studies

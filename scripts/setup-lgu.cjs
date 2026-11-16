@@ -52,7 +52,7 @@ async function main() {
   });
 
   // ─── Collect info ──────────────────────────────────────────────────
-  const lguName = await question(rl, 'LGU name (e.g. "Los Baños")');
+  const lguName = await question(rl, 'LGU name (e.g. "Bagabag")');
   const province = await question(rl, 'Province (e.g. "Laguna")');
   const region = await question(rl, 'Region (e.g. "CALABARZON (IV-A)")');
   const regionCode = await question(rl, 'Region code (e.g. "040000000")');
@@ -70,12 +70,12 @@ async function main() {
 
   const portalName = await question(
     rl,
-    'Portal name (e.g. "BetterLB")',
+    'Portal name (e.g. "BetterBagabag")',
     `Better${slug.replace(/-/g, '').substring(0, 4).toUpperCase()}`
   );
   const domain = await question(
     rl,
-    'Domain (e.g. "betterlb.org")',
+    'Domain (e.g. "betterbagabag.org")',
     `${slugify(portalName)}.org`
   );
 

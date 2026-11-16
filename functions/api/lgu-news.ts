@@ -2,7 +2,7 @@
  * LGU News API
  * GET /api/lgu-news - Scrapes losbanos.gov.ph homepage for recent news posts
  *
- * Extracts the 3 most recent posts from the Los Baños LGU website homepage.
+ * Extracts the 3 most recent posts from the Bagabag LGU website homepage.
  * Uses KV caching with 15-minute TTL and rate limiting (30 requests/minute).
  */
 import { createKVCache, CACHE_TTL } from '../utils/kv-cache';

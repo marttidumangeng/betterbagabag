@@ -30,7 +30,7 @@ export const test = base.extend({
           contentType: 'application/json',
           body: JSON.stringify({
             los_ba_os: {
-              name: 'Los Baños',
+              name: 'Bagabag',
               coordinates: { lat: 14.1763, lon: 121.2219 },
               weather: [{ icon: '01d', description: 'partly cloudy' }],
               main: {
@@ -77,7 +77,7 @@ export const test = base.extend({
           contentType: 'application/json',
           body: JSON.stringify({
             los_ba_os: {
-              name: 'Los Baños',
+              name: 'Bagabag',
               temperature: 28,
               description: 'partly cloudy',
             },

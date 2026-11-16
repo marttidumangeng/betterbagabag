@@ -29,9 +29,9 @@ import populationData from '@/data/statistics/population.json';
 
 // 14 Highly Distinct Colors (Top 3 mapped to Brand Primaries)
 const BRGY_COLORS = [
-  '#0066eb', // 1. Municipal Blue (Mayondon)
-  '#cc3e00', // 2. Brand Orange (San Antonio)
-  '#059669', // 3. Emerald Green (Batong Malake)
+  '#0066eb', // 1. Municipal Blue
+  '#cc3e00', // 2. Brand Orange
+  '#059669', // 3. Emerald Green
   '#7c3aed', // 4. Vivid Purple
   '#dc2626', // 5. Strong Red
   '#0891b2', // 6. Cyan/Teal

@@ -6,7 +6,7 @@ const path = require('node:path');
 const ROOT = path.resolve(__dirname, '../..');
 const OUT = path.join(ROOT, 'pipeline/openlgu/terms.json');
 
-// Sangguniang Bayan terms for Municipality of Los Baños
+// Sangguniang Bayan terms for Municipality of Bagabag
 // 3-year terms aligned with Philippine local election cycles
 const TERMS = [
   {

@@ -1,5 +1,5 @@
 /**
- * Better LB Components
+ * BetterBagabag Components
  *
  * Central export point for all application components.
  * Import components from their respective subdirectories:

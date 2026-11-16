@@ -1,6 +1,6 @@
-# BetterLB OpenLGU
+# BetterBagabag OpenLGU
 
-This context describes the civic-legislative data language used by BetterLB's OpenLGU portal. It distinguishes source intake, review, and canonical public records for municipal legislation.
+This context describes the civic-legislative data language used by BetterBagabag's OpenLGU portal. It distinguishes source intake, review, and canonical public records for municipal legislation.
 
 ## Language
 
@@ -13,7 +13,7 @@ The separate workflow that merges service data into public Citizens Charter serv
 _Avoid_: OpenLGU pipeline, legislative pipeline
 
 **Source Record**:
-A raw observation from an upstream source, such as a website table row, Facebook post, or OCR result. A source record records what was seen, not what BetterLB believes is true.
+A raw observation from an upstream source, such as a website table row, Facebook post, or OCR result. A source record records what was seen, not what BetterBagabag believes is true.
 _Avoid_: Document, canonical record
 
 **Raw-Preserving Collection**:
@@ -141,7 +141,7 @@ The policy of preserving raw source snapshots only for changed, anomalous, or ex
 _Avoid_: Full snapshot archive, keep everything
 
 **Scrape Source**:
-An upstream location monitored by the pipeline, such as a Los Baños website table or Facebook source. A scrape source defines what is checked, not what was found.
+An upstream location monitored by the pipeline, such as a Bagabag website table or Facebook source. A scrape source defines what is checked, not what was found.
 _Avoid_: Source record, data source row
 
 **Scrape Run**:
@@ -173,11 +173,11 @@ The observed fetchability of a PDF URL, such as reachable, dead, redirected, mis
 _Avoid_: Source identity, publication status
 
 **PDF Mirror**:
-A BetterLB-controlled archived copy of an official LGU PDF, usually stored outside D1. A PDF mirror preserves evidence when official links rot, but it does not replace the official source URL.
+A BetterBagabag-controlled archived copy of an official LGU PDF, usually stored outside D1. A PDF mirror preserves evidence when official links rot, but it does not replace the official source URL.
 _Avoid_: Official PDF URL, canonical source
 
 **Archived Copy Fallback**:
-A future public display mode where BetterLB can show a preserved PDF mirror when the official PDF URL is dead. Archived copy fallback is not the initial public behavior.
+A future public display mode where BetterBagabag can show a preserved PDF mirror when the official PDF URL is dead. Archived copy fallback is not the initial public behavior.
 _Avoid_: Primary source, official record
 
 **Facebook Post**:

@@ -306,7 +306,7 @@ export const Navbar: FC = () => {
                 onClick={closeMenu}
                 className='block p-4 text-xs font-bold tracking-widest uppercase text-kapwa-text-support'
               >
-                About Better LB
+                About BetterBagabag
               </Link>
               <Link
                 to='/contact'

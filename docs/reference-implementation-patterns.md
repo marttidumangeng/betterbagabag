@@ -1,6 +1,6 @@
-# BetterLB Reference Implementation Patterns
+# BetterBagabag Reference Implementation Patterns
 
-Reusable architecture, patterns, and conventions extracted from the BetterLB civic tech portal. Each section includes rationale and source file references for copying into new projects.
+Reusable architecture, patterns, and conventions extracted from the BetterBagabag civic tech portal. Each section includes rationale and source file references for copying into new projects.
 
 ---
 
@@ -97,24 +97,24 @@ A single JSON file parameterizes the entire portal. Swap this file and the porta
 ```json
 {
   "lgu": {
-    "name": "Los Baños",
-    "fullName": "Municipality of Los Baños",
+    "name": "Bagabag",
+    "fullName": "Municipality of Bagabag",
     "province": "Laguna",
     "region": "Region IV-A",
     "regionCode": "CALABARZON",
     "type": "municipality",
-    "logoPath": "/logos/png/betterlb-blue.png",
+    "logoPath": "/logos/png/betterbagabag-blue.png",
     "officialWebsite": "https://losbanos.gov.ph"
   },
   "portal": {
-    "name": "BetterLB",
-    "domain": "betterlb.org",
+    "name": "BetterBagabag",
+    "domain": "betterbagabag.org",
     "brandColor": "#0066eb",
-    "tagline": "Community Powered Los Baños Portal"
+    "tagline": "Community Powered Bagabag Portal"
   },
   "location": {
     "coordinates": { "lat": 14.1763, "lon": 121.2219 },
-    "weather": { "defaultCity": "Los Baños" }
+    "weather": { "defaultCity": "Bagabag" }
   },
   "dataPaths": {
     "departments": "src/data/lgu/losbanos/directory/departments.json",

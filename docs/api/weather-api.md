@@ -1,10 +1,10 @@
 # Weather API
 
-The Weather API provides current weather conditions and 3-hour forecasts for Los Baños, Philippines using the OpenWeatherMap API.
+The Weather API provides current weather conditions and 3-hour forecasts for Bagabag, Philippines using the OpenWeatherMap API.
 
 ## Overview
 
-- **Base URL:** `https://betterlb.gov.ph/api/weather`
+- **Base URL:** `https://betterbagabag.org/api/weather`
 - **Authentication:** None required
 - **Data Source:** OpenWeatherMap API
 - **Cache Duration:** 1 hour (3,600 seconds)
@@ -14,7 +14,7 @@ The Weather API provides current weather conditions and 3-hour forecasts for Los
 
 - Current weather conditions (temperature, humidity, wind, visibility)
 - 3-hour forecast for the next 24 hours (8 data points)
-- Multi-city support (currently Los Baños, extensible to other municipalities)
+- Multi-city support (currently Bagabag, extensible to other municipalities)
 - KV caching with automatic refresh
 - CORS-protected for authorized origins
 - Force update option for manual refresh
@@ -45,7 +45,7 @@ Retrieves current weather and 3-hour forecast data. Returns cached data if avail
 ```json
 {
   "los_banos": {
-    "name": "Los Baños",
+    "name": "Bagabag",
     "coordinates": {
       "lat": 14.1763,
       "lon": 121.2219
@@ -164,35 +164,35 @@ Retrieves current weather and 3-hour forecast data. Returns cached data if avail
 ### Get All Cities
 
 ```bash
-curl https://betterlb.gov.ph/api/weather
+curl https://betterbagabag.org/api/weather
 ```
 
 ### Get Specific City
 
 ```bash
-curl "https://betterlb.gov.ph/api/weather?city=Los Baños"
+curl "https://betterbagabag.org/api/weather?city=Bagabag"
 ```
 
 ### Force Update (Bypass Cache)
 
 ```bash
-curl "https://betterlb.gov.ph/api/weather?update=true"
+curl "https://betterbagabag.org/api/weather?update=true"
 ```
 
 ### Get Specific City with Force Update
 
 ```bash
-curl "https://betterlb.gov.ph/api/weather?city=Los Baños&update=true"
+curl "https://betterbagabag.org/api/weather?city=Bagabag&update=true"
 ```
 
 ### JavaScript/TypeScript Example
 
 ```typescript
 // Fetch weather data
-const response = await fetch('https://betterlb.gov.ph/api/weather');
+const response = await fetch('https://betterbagabag.org/api/weather');
 const weather = await response.json();
 
-// Access Los Baños weather
+// Access Bagabag weather
 const losBanos = weather.los_banos;
 console.log(`Temperature: ${losBanos.main.temp}°C`);
 console.log(`Humidity: ${losBanos.main.humidity}%`);
@@ -224,7 +224,7 @@ export function WeatherWidget() {
   useEffect(() => {
     async function fetchWeather() {
       try {
-        const response = await fetch('https://betterlb.gov.ph/api/weather');
+        const response = await fetch('https://betterbagabag.org/api/weather');
         const data = await response.json();
         setWeather(data);
       } catch (error) {
@@ -244,7 +244,7 @@ export function WeatherWidget() {
 
   return (
     <div>
-      <h2>Los Baños Weather</h2>
+      <h2>Bagabag Weather</h2>
       <p>Temperature: {current.main.temp}°C</p>
       <p>Humidity: {current.main.humidity}%</p>
       <p>Conditions: {current.weather[0].description}</p>
@@ -268,11 +268,11 @@ export function WeatherWidget() {
 
 ### Supported Cities
 
-The API is configured for **Los Baños** by default. Additional cities can be added in `functions/api/weather.ts`:
+The API is configured for **Bagabag** by default. Additional cities can be added in `functions/api/weather.ts`:
 
 ```typescript
 const DEFAULT_CITY: CityCoordinates = {
-  name: 'Los Baños',
+  name: 'Bagabag',
   lat: 14.1763,
   lon: 121.2219,
 };
@@ -345,8 +345,8 @@ export async function scheduled(controller: ScheduledController, env: Env) {
 The API implements CORS protection for security:
 
 **Allowed Origins:**
-- `https://betterlb.pages.dev` (production)
-- `https://betterlb.gov.ph` (custom domain)
+- `https://betterbagabag.org` (production)
+- `https://betterbagabag.org` (custom domain)
 - `http://localhost:5173` (Vite dev server)
 - `http://localhost:8788` (Wrangler dev server)
 
@@ -427,19 +427,19 @@ The API is designed to support multiple cities:
 
 ```bash
 # Test basic request
-curl https://betterlb.gov.ph/api/weather
+curl https://betterbagabag.org/api/weather
 
 # Test city filtering
-curl "https://betterlb.gov.ph/api/weather?city=Los Baños"
+curl "https://betterbagabag.org/api/weather?city=Bagabag"
 
 # Test force update
-curl "https://betterlb.gov.ph/api/weather?update=true"
+curl "https://betterbagabag.org/api/weather?update=true"
 
 # Test case insensitivity
-curl "https://betterlb.gov.ph/api/weather?city=los_banos"
+curl "https://betterbagabag.org/api/weather?city=los_banos"
 
 # Test OPTIONS preflight
-curl -X OPTIONS https://betterlb.gov.ph/api/weather \
+curl -X OPTIONS https://betterbagabag.org/api/weather \
   -H "Origin: http://localhost:5173" \
   -v
 ```
@@ -468,4 +468,4 @@ assert(data.los_banos.hourly.length === 8);
 
 **Last Updated:** 2026-02-28
 **API Version:** 1.0.0
-**Maintained By:** BetterLB Development Team
+**Maintained By:** BetterBagabag Development Team

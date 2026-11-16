@@ -3,12 +3,70 @@
     "slug": "barangay-bakir",
     "barangay_name": "Bakir",
     "address": "Barangay Hall, Bakir, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "0936-904-4825"
+    ],
+    "website": "https://www.dilg.gov.ph/barangay-officials-directory",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Rajie M. Fernando",
+        "contact": "0936-904-4825",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Dante E. Pascua, Sr.",
+        "contact": "0936-904-4825",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Bobby F. Calica",
+        "contact": "0936-904-4285",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Benigno G. Vergara",
+        "contact": "0936-904-4285",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Maribel H. Fernandez",
+        "contact": "0936-904-4285",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Brando C. Vergara",
+        "contact": "0936-904-4285",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Rogelio M. Baldevino, Sr.",
+        "contact": "0936-904-4825",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Jiezel P. Fernando",
+        "contact": "0936-904-4285",
+        "email": null
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "Chingky Q. Modesto",
+        "contact": "0916-334-4086",
+        "email": "chingkymodesto19@gmail.com"
+      },
+      {
+        "role": "Barangay Secretary",
+        "name": "Dalyt Jane B. Cabang",
+        "contact": "0936-904-4825",
+        "email": null
       }
     ]
   },

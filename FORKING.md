@@ -1,12 +1,12 @@
 # Forking Guide — Create Your BetterLGU Portal
 
-BetterLB is a forkable template for building community-powered LGU portals. Follow these steps to create a portal for your municipality, city, or province.
+BetterBagabag is a forkable template for building community-powered LGU portals. Follow these steps to create a portal for your municipality, city, or province.
 
 ## Quick Start
 
 ```bash
 # 1. Fork or clone
-git clone https://github.com/BetterLosBanos/betterlb.git better-yourlgu
+git clone https://github.com/marttidumangeng/betterbagabag.git better-yourlgu
 cd better-yourlgu
 
 # 2. Run setup wizard
@@ -143,4 +143,4 @@ For Cloudflare Pages Functions (admin API), see `functions/` directory.
 
 ## Contributing Back
 
-Found a bug or improvement that applies to all LGU portals? Open an issue or PR on the [BetterLB repo](https://github.com/BetterLosBanos/betterlb).
+Found a bug or improvement that applies to all LGU portals? Open an issue or PR on the [BetterBagabag repo](https://github.com/marttidumangeng/betterbagabag).
