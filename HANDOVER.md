@@ -20,7 +20,7 @@ Written 2026-11-15. Phases 1–5 done locally. Phase 6 waits for Martti’s go-a
 ## Martti must supply
 
 1. **Contact email** for the portal (TBC). LGU mayor’s office email is already on the directory (`bagabagmo2022@gmail.com`); that is not the portal inbox.
-2. **Punong barangay / officials** for the remaining 5 (+ Quirino full roster): Santa Lucia, Tuao North, Tuao South, Villa Coloma, Villaros. Eleven barangays filled from DILG; Quirino still captain-only from barangaydirectory.
+2. **Barangay officials** — all 17 filled from the DILG directory (2026-11-16). Spot-check odd listings (Santa Cruz duplicate Balverde; Quirino “Wilso”; Villaros 10-digit Andin number) if DILG republishes.
 3. **Citizen’s Charter** ingestion — 16 office PDFs are live on bagongbagabag.gov.ph; services JSON still empty.
 4. **Municipal office head names** beyond Treasurer Janette Santiago (emails/phones harvested; other heads still “Not yet listed”).
 5. **Tourism spots + photos/videos**, with rights clearance (placeholder only for now). The mayor's Facebook page was suggested as a source, but it may be personal, so ask before using anything from it.
