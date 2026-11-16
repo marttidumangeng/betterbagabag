@@ -219,11 +219,67 @@
     "trunkline": [
       "078-392-3509"
     ],
-    "website": "https://www.barangaydirectory.com/barangay/bagabag/lantap",
+    "website": "https://www.dilg.gov.ph/barangay-officials-directory",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Orlando Baclig Naval, Sr."
+        "name": "Orlando B. Naval, Sr.",
+        "contact": "078-392-3509",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Gladys May M. Delizo",
+        "contact": "078-392-3509",
+        "email": "amanuelgladysmay@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "James G. Aduca",
+        "contact": "078-392-3509",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Reagie J. Sicat",
+        "contact": "078-392-3509",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Manuel A. Manuel",
+        "contact": "078-392-3509",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Rosthom L. Afalla",
+        "contact": "078-392-3509",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Fe A. Buduan",
+        "contact": "078-392-3509",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Jose F. Jacob",
+        "contact": "078-392-3509",
+        "email": null
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "Wilmer Jon A. Fernandez",
+        "contact": "0928-750-7966",
+        "email": null
+      },
+      {
+        "role": "Barangay Secretary",
+        "name": "Mary Ann V. Bolla",
+        "contact": "0917-960-4863",
+        "email": null
       }
     ]
   },
@@ -234,11 +290,67 @@
     "trunkline": [
       "078-430-0245"
     ],
-    "website": "https://www.barangaydirectory.com/barangay/bagabag/murong",
+    "website": "https://www.dilg.gov.ph/barangay-officials-directory",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Ronald Buen Quiaoit"
+        "name": "Ronald B. Quiaoit",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Elbert S. Toquero",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Jerry G. Afalla",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Jeannie C. Cardenas",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Mayolyn T. Jacosalem",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Arnelio C. Buen",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Richard S. Estabillo",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SB Member",
+        "name": "Ruby T. Jallorina",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "Shaun Miko V. Bernardino",
+        "contact": "078-430-0245",
+        "email": null
+      },
+      {
+        "role": "Barangay Secretary",
+        "name": "Lorna S. Jallorina",
+        "contact": "078-430-0245",
+        "email": "lsjallorina1017@gmail.com"
       }
     ]
   },
@@ -246,12 +358,70 @@
     "slug": "barangay-nangalisan",
     "barangay_name": "Nangalisan",
     "address": "Barangay Hall, Nangalisan, Bagabag, Nueva Vizcaya",
-    "trunkline": [],
-    "website": null,
+    "trunkline": [
+      "078-392-3371"
+    ],
+    "website": "https://www.dilg.gov.ph/barangay-officials-directory",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "Not yet listed"
+        "name": "Noel L. Valiente",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "Tirso A. Millano",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "Graciano G. Mainit, Jr.",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "Imelda A. Gabaon",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "Alex V. Florida",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "Gildo T. Mariano",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "Elpidio G. Sison, Jr.",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SB Member",
+        "name": "Benjamin V. Millano, Jr.",
+        "contact": "078-392-3371",
+        "email": "barangaynangalisan1972@gmail.com"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "Raven Jan Pineda",
+        "contact": "078-392-3371",
+        "email": null
+      },
+      {
+        "role": "Barangay Secretary",
+        "name": "Mylyn A. Villaruz",
+        "contact": "078-392-3371",
+        "email": "mylynalnas14@gmail.com"
       }
     ]
   },
