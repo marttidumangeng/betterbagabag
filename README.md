@@ -1,326 +1,223 @@
-# 🏛️ Better LB (Los Baños)
+# BetterBagabag
 
-A community-led, open-source portal designed to make the government of the **Municipality of Los Baños** accessible, transparent, and user-friendly.
+A community-led, open-source civic portal for the **Municipality of Bagabag**, Nueva Vizcaya.
 
-This project is a municipal-focused fork of [BetterGov.ph](https://bettergov.ph), adapted to meet the specific needs of Los Bañenses.
+This project is a municipal fork of [Better Los Baños](https://github.com/BetterLosBanos/betterlb) / [BetterGov.ph](https://bettergov.ph), adapted for Bagabag. BetterBagabag is **independent and unofficial** — it is not a website of the Municipal Government of Bagabag.
+
+Live site: [https://betterbagabag.org](https://betterbagabag.org)  
+National budget lines that name Bagabag: [https://budget.betterbagabag.org](https://budget.betterbagabag.org)
 
 ---
+
 ### Inspirations
 
-BetterGov.PH https://github.com/bettergovph/bettergov
-BetterSolano.org https://github.com/BetterSolano/bettersolano
-Betterlocalgov https://github.com/iyanski/betterlocalgov
+- [BetterGov.PH](https://github.com/bettergovph/bettergov)
+- [Better Los Baños](https://github.com/BetterLosBanos/betterlb)
+- [BetterSolano.org](https://github.com/BetterSolano/bettersolano)
+- [Betterlocalgov](https://github.com/iyanski/betterlocalgov)
 
-### Portal Features
-BetterLB provides Los Baños with:
-- **Public Services Directory**: Comprehensive guide to municipal services with requirements, fees, and step-by-step processes
-- **Legislative Portal**: Access to ordinances, resolutions, and executive orders from the Sangguniang Bayan
-- **Transparency Dashboard**: Financial data, procurement bids, and infrastructure projects
-- **Government Directory**: Contact information for all municipal departments and officials
-- **Multi-language Support**: English and Filipino translations
+### Portal features
+
+BetterBagabag aims to provide Bagabag with:
+
+- **Public services directory** — municipal services with requirements, fees, and steps (Citizen’s Charter ingest still in progress)
+- **Government directory** — elected officials, departments, and barangays
+- **Transparency links** — procurement/infrastructure search plus the separate budget portal
+- **Statistics** — population, municipal income (ARI), and CMCI where sourced
+- **Multi-language support** — English and Filipino UI strings
 
 ---
 
-## 🔄 Forking for Your LGU
+## Forking for your LGU
 
-BetterLB is designed to be easily adapted for any Local Government Unit (LGU) in the Philippines.
+This codebase is designed to be adapted for other Philippine LGUs.
 
-## Quick Start for Other LGUs
+### Quick start for other LGUs
 
-1. **Edit Configuration**: Update `/config/lgu.config.json` with your LGU details
-2. **Update Translations**: Modify `/public/locales/en/common.json` for LGU-specific text
-3. **Add Your Data**: Replace data files in `/src/data/` with your municipality's information
-4. **Build and Test**: Run `npm install && npm run build`
+1. **Edit configuration** — update `/config/lgu.config.json`
+2. **Update translations** — modify `/public/locales/en/common.json` (and `fil` as needed)
+3. **Add your data** — replace files under `/src/data/`
+4. **Build and test** — `npm install && npm run build`
 
-### Configuration Files to Edit
+### Configuration files to edit
 
-| File | What to Change |
-|------|------------------|
-| `/config/lgu.config.json` | All LGU settings (name, province, coordinates, branding, transparency config) |
-| `/public/locales/en/common.json` | UI text strings (hero title, footer copyright, government section) |
+| File | What to change |
+|------|----------------|
+| `/config/lgu.config.json` | LGU settings (name, province, coordinates, branding, transparency) |
+| `/public/locales/en/common.json` | UI text strings |
 | `/src/data/directory/departments.json` | Municipal departments and offices |
 | `/src/data/directory/barangays.json` | Barangay information |
-| `/src/data/services/categories/*.json` | Public services data by category |
+| `/src/data/directory/executive.json` / `legislative.json` | Elected officials |
+| `/src/data/services/` | Public services data |
+| `/SOURCES.md` | Provenance for every sourced fact |
 
-### Key Configuration Fields
+### Key configuration fields
 
-| Field | Description | Example (Los Baños) |
-|-------|-------------|---------------------|
-| `lgu.name` | Short municipality name | "Los Baños" |
-| `lgu.fullName` | Full official name | "Municipality of Los Baños" |
-| `lgu.province` | Province name | "Laguna" |
-| `lgu.region` | Region name | "Region IV-A" |
-| `lgu.regionCode` | Region code | "CALABARZON" |
-| `lgu.type` | LGU type | "municipality" or "city" |
-| `lgu.officialWebsite` | Official LGU website | "https://losbanos.gov.ph" |
-| `portal.name` | Portal name | "BetterLB" |
-| `portal.baseUrl` | Portal base URL | "https://betterlb.org" |
-| `portal.tagline` | Portal tagline | "Community Powered Los Baños Portal" |
+| Field | Description | Example (Bagabag) |
+|-------|-------------|-------------------|
+| `lgu.name` | Short municipality name | `"Bagabag"` |
+| `lgu.fullName` | Full official name | `"Municipality of Bagabag"` |
+| `lgu.province` | Province name | `"Nueva Vizcaya"` |
+| `lgu.region` | Region name | `"Region II"` |
+| `lgu.regionCode` | Region label | `"Cagayan Valley"` |
+| `lgu.type` | LGU type | `"municipality"` |
+| `lgu.officialWebsite` | Official LGU website | `"https://bagongbagabag.gov.ph"` |
+| `portal.name` | Portal name | `"BetterBagabag"` |
+| `portal.baseUrl` | Portal base URL | `"https://betterbagabag.org"` |
+| `portal.brandColor` | Brand accent | `"#15803d"` |
 
-**Note:** See [`FORKING.md`](./FORKING.md) for comprehensive forking instructions including database setup for legislative data.
+See [`FORKING.md`](./FORKING.md) for fuller forking notes (some Better LB OpenLGU/D1 steps do not apply to this static Worker deploy).
 
-## Technical Stack
-*   **Frontend**: React 19, Vite, TypeScript (Strict mode)
-*   **Styling**: Tailwind CSS v4 (CSS variables, high-contrast tokens)
-*   **Design System**: @bettergov/kapwa (semantic tokens, component library)
-*   **Backend**: Cloudflare Pages Functions (TypeScript)
-*   **Deployment**: Wrangler 4.155.0 (pinned for compatibility)
-*   **Data**: Structured JSON (Modular category-based architecture)
-*   **Search**: Meilisearch with Fuse.js fuzzy search
-*   **Localization**: i18next with English & Filipino support
-*   **Maps**: Leaflet for geospatial visualizations
-*   **Data Pipeline**: Python scripts for legislative document processing
-*   **Testing**: Playwright (E2E tests across multiple browsers)
-*   **Code Quality**: ESLint, Prettier, Husky pre-commit hooks
-*   **Security**: Undici 8.0.2 (pinned for security fixes)
+## Technical stack
 
----
+- **Frontend**: React 19, Vite, TypeScript
+- **Styling**: Tailwind CSS v4 + `@bettergov/kapwa`
+- **Production deploy**: Cloudflare Worker static assets (`betterbagabag-lgu`) via Wrangler — SPA, no Pages Functions on the live root domain
+- **Data**: Structured JSON under `/src/data/`
+- **Search**: Meilisearch (procurement/infrastructure) with Fuse.js where used
+- **Localization**: i18next (English & Filipino)
+- **Testing**: Vitest + Playwright
+- **Code quality**: ESLint, Prettier
 
-## Project Structure
-
-```
-betterlb/
-├── e2e/                         # End-to-end tests
-│   └── utils/                   # Test helpers and shared testing logic
-├── functions/                   # Serverless / backend functions (Cloudflare Pages)
-│   └── api/                     # API endpoints and handlers
-├── pipeline/                    # Data processing pipeline (Python side)
-│   ├── data/                    # Structured source documents
-│   │   └── pdfs/                # Source legislative PDFs
-│   │       ├── executive_orders/
-│   │       ├── ordinances/
-│   │       └── resolutions/
-│   └── __pycache__/             # Python cache (auto-generated)
-├── public/                      # Static public assets
-│   ├── assets/                  # General media assets
-│   ├── locales/                 # Translation files (en, fil)
-│   └── logos/                   # Logo exports
-├── raw_data/                    # Unprocessed data before pipeline cleanup
-├── scripts/                     # Automation, maintenance, and build scripts
-├── src/                         # Main application source code
-│   ├── components/              # Reusable UI components
-│   │   ├── data-display/        # Tables, cards, and record viewers
-│   │   ├── home/                # Homepage-specific components
-│   │   ├── layout/              # Layout wrappers, grids, headers, footers
-│   │   ├── map/                 # Map visualizations and geospatial UI
-│   │   ├── navigation/          # Menus, navbars, breadcrumbs
-│   │   ├── search/              # Search bars, filters, query UI
-│   │   ├── ui/                  # Generic UI elements (buttons, modals, etc.)
-│   │   └── widgets/             # Small reusable info widgets
-│   ├── constants/               # App-wide constant values and config
-│   ├── data/                    # Structured frontend data layer
-│   │   ├── about/               # About page content
-│   │   ├── directory/           # Government directory datasets
-│   │   │   └── schema/          # Data schemas for directory records
-│   │   ├── legislation/         # Legislative data
-│   │   │   ├── committees/
-│   │   │   ├── documents/
-│   │   │   │   └── sb_12/       # Session-specific legislative docs
-│   │   │   ├── persons/         # Councilors, authors, sponsors
-│   │   │   ├── sessions/        # Legislative sessions
-│   │   │   │   └── sb_12/
-│   │   │   └── term/            # Term metadata
-│   │   ├── schema/              # Global data schemas
-│   │   ├── services/            # Public service datasets
-│   │   │   └── categories/      # Service classifications
-│   │   ├── statistics/          # Municipality statistics datasets
-│   │   └── transparency/        # Transparency and governance data
-│   ├── hooks/                   # Custom reusable frontend hooks
-│   ├── i18n/                    # Internationalization setup and config
-│   │   ├── languages.ts         # Language definitions (English, Filipino)
-│   │   └── README.md            # Translation guide
-│   ├── lib/                     # Utility libraries and helpers
-│   ├── pages/                   # Route-level pages (site sections)
-│   │   ├── about/
-│   │   ├── accessibility/
-│   │   ├── contribute/
-│   │   ├── data/                # Open data portal pages
-│   │   ├── government/          # Government structure pages
-│   │   │   ├── barangays/
-│   │   │   ├── departments/
-│   │   │   ├── elected-officials/
-│   │   │   └── executive/
-│   │   ├── legislation/         # Legislative portal for Ordinances/Resolutions/Executive Orders
-│   │   ├── services/            # Public services portal
-│   │   ├── sitemap/             # Human-readable sitemap
-│   │   ├── statistics/          # Statistics portal
-│   │   └── transparency/        # Transparency portal
-│   │       ├── bids/
-│   │       ├── components/
-│   │       ├── financial/
-│   │       ├── infrastructure/
-│   │       └── procurement/
-│   └── types/                   # Type definitions (TypeScript or schemas)
-└── (root config files)          # package.json, build configs, .env files
-```
-
-### Key Components
-- **Service Directory**: Categorized services from `src/data/services/categories/`
-- **Legislative Portal**: Ordinances, resolutions, executive orders with document parsing
-- **Transparency Portal**: Financial data, procurement, bids, infrastructure projects
-- **Search Integration**: Meilisearch-powered search with real-time indexing
-- **Internationalization**: Multi-language support with i18next
-
-### Los Baños-Specific Data
-
-BetterLB includes structured data for Los Baños:
-
-| Data Type | Location | Description |
-|-----------|----------|-------------|
-| **Departments** | `/src/data/directory/departments.json` | Municipal departments and offices with contact info |
-| **Barangays** | `/src/data/directory/barangays.json` | 14 barangay profiles and officials |
-| **Services** | `/src/data/services/categories/*.json` | Public services by category (BPLO, Assessor, Engineering, etc.) |
-| **Citizens Charter** | `/src/data/citizens-charter/citizens-charter.json` | Service requirements, fees, and client steps |
-| **Legislation** | Cloudflare D1 Database | Ordinances, resolutions, executive orders |
-| **Statistics** | `/src/data/statistics/` | Municipal demographics and indicators |
-
-#### Data Pipeline for Legislative Documents
-
-Los Baños legislative documents are processed through a Python pipeline:
-
-1. **Scrape** (`pipeline/1_scrape.py`) - Download PDFs from official sources
-2. **Normalize** (`pipeline/1.5_normalize.py`) - Standardize filenames and metadata
-3. **Parse** (`pipeline/3_parse.py`) - Extract text and metadata from PDFs
-4. **Generate** (`pipeline/4_generate.py`) - Create structured JSON for database import
-
-See [`pipeline/README.md`](./pipeline/README.md) for complete documentation.
+Weather, forex, and OpenLGU admin APIs from the Better LB template are turned off for this static deploy.
 
 ---
 
-## 🚀 How to Run Locally
+## Project structure
 
-### 1. Clone and Install
+```
+betterbagabag/
+├── config/                      # lgu.config.json
+├── public/                      # Static assets, locales, logos
+├── scripts/                     # Merge and maintenance scripts
+├── src/
+│   ├── components/
+│   ├── data/                    # Directory, services, statistics, transparency
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/                   # Route-level pages
+│   └── types/
+├── SOURCES.md                   # Sourced facts for Bagabag content
+├── HANDOVER.md                  # Operator notes
+├── wrangler.jsonc               # Cloudflare Worker (static assets)
+└── (root config files)
+```
+
+### Bagabag-specific data
+
+| Data type | Location | Notes |
+|-----------|----------|--------|
+| **Departments** | `/src/data/directory/departments.json` | Contacts harvested from bagongbagabag.gov.ph; many heads still TODO |
+| **Barangays** | `/src/data/directory/barangays.json` | 17 barangays; 8 punong barangays filled (2023–2026) |
+| **Executive / legislative** | `/src/data/directory/executive.json`, `legislative.json` | 2025–2028 officials + SB committees |
+| **Services** | `/src/data/services/` | Cleared of Los Baños charter; Bagabag PDFs not ingested yet |
+| **Statistics** | `/src/data/statistics/` | Population, ARI, partial CMCI |
+| **Transparency SRE** | `/src/data/transparency/sre.json` | Empty until quarters are sourced |
+| **Sources** | `/SOURCES.md` | Every public fact with URL and read date |
+
+---
+
+## How to run locally
+
+### 1. Clone and install
+
 ```bash
-git clone https://github.com/BetterLosBanos/betterlb
-cd betterlb
+git clone https://github.com/marttidumangeng/betterbagabag
+cd betterbagabag
 npm install
 ```
 
-### 2. Prepare Data
-Since the service directory is split into manageable category files, you must merge them before running the app:
-```bash
-python3 scripts/merge_services.py
-```
+### 2. Start development server
 
-### 3. Start Development Server
 ```bash
 npm run dev
 ```
-**Access the portal at:** `http://localhost:5173`
 
-### 4. Running Tests
+Portal: `http://localhost:5173`
+
+### 3. Tests and quality
+
 ```bash
-npm run test:e2e        # Run all end-to-end tests
-npm run lint            # Check code quality (max warnings = 0)
-npm run format          # Format code with Prettier
+npx vitest run
+npm run lint
+npm run build
 ```
 
-### 5. Building for Production
+---
+
+## Bagabag government structure (portal view)
+
+### Executive
+
+- **Mayor** — Benigno B. Calauad (2025–2028)
+- **Vice Mayor** — Nestor Sevillena (2025–2028)
+- Municipal departments listed under `/government/departments`
+
+### Legislative (Sangguniang Bayan)
+
+- Vice Mayor (presiding officer)
+- 8 regular councilors
+- Ex-officio: Liga ng mga Barangay President, SK Federation President, IPMR
+
+Live directory: [https://betterbagabag.org/government](https://betterbagabag.org/government)
+
+---
+
+## Contribute
+
+1. **Non-developers** — use `/contribute` on the live site (GitHub Issues).
+2. **Developers** — [Issues](https://github.com/marttidumangeng/betterbagabag/issues).
+3. **Data** — prefer sourced facts; update `SOURCES.md` when you add public data.
+
+### Development workflow
+
+- Follow [Conventional Commits](https://www.conventionalcommits.org/) — e.g. `fix(ui): …`, `feat(directory): …`, `chore(deps): …`
+- Do not add `Co-authored-by` trailers for Cursor/Claude on this public repo
+- Keep PRs focused; run lint/tests before merge
+
+---
+
+## Deployment
+
+### Production (BetterBagabag)
+
+- **Worker**: `betterbagabag-lgu` (static assets from `./dist`)
+- **Domain**: `betterbagabag.org`
+- **Budget portal** (separate repo): `budget.betterbagabag.org`
+
 ```bash
-npm run build           # Combines merge_services, TypeScript, and Vite build
+npm run build
+npx wrangler deploy
 ```
 
-**Note:** The build script runs `tsc && npm run merge:data && vite build` automatically
+See [`HANDOVER.md`](./HANDOVER.md) for operator checklist and Cloudflare account notes.
 
 ---
 
-## 🏛️ Los Baños Government Structure
+## License and data sources
 
-### Executive Branch
-- **Mayor**: Chief executive officer of the municipality
-- **Vice Mayor**: Presiding officer of the Sangguniang Bayan and mayoral successor
-- **Municipal Departments**: Administrative offices implementing municipal programs
+### Code license
 
-### Legislative Branch (Sangguniang Bayan)
-The Sangguniang Bayan is the legislative body of Los Baños, composed of:
-- **Vice Mayor** (Presiding Officer)
-- **8 Regular Councilors** (District representatives)
-- **2 Ex-Officio Councilors** (ABC President and SK Federation President)
+[Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/) — public domain dedication.
 
-### Key Departments
-- **BPLO**: Business Permit and Licensing Office
-- **MTO**: Municipal Treasurer's Office
-- **Assessor's Office**: Property assessment and taxation
-- **Engineering Office**: Infrastructure and public works
-- **MPDC**: Municipal Planning and Development Coordinator
-- **LCR**: Local Civil Registry
-- **Municipal Health Office**: Public health services
-- **Municipal Agriculture Office**: Agricultural programs
+### Data attribution
 
-See the [Government Directory](https://betterlb.org/government) on the live site for complete department listings and contact information.
+| Source | Type |
+|--------|------|
+| [bagongbagabag.gov.ph](https://bagongbagabag.gov.ph) | Official LGU site (contacts, SB committees, charter PDFs) |
+| COMELEC / election result pages | 2025 local winners |
+| PhilGEPS / BetterGov mirrors | Procurement organization name |
+| PSA / Scene.ph atlas, BLGF, DTI CMCI | Statistics |
+| [barangaydirectory.com](https://www.barangaydirectory.com/) | Selected 2023–2026 punong barangays |
+
+Always verify critical facts with official LGU sources. Provenance detail lives in [`SOURCES.md`](./SOURCES.md).
 
 ---
 
-## Join the Grassroots Movement
-We are looking for volunteers passionate individuals who want to make Los Baños a better place. You don't need to be a developer to help!
+## Contact
 
-### How You Can Contribute:
-1.  **Non-Developers**: Visit the `/contribute` page on the live site to suggest new services or fix outdated information via GitHub Issues (requires a free GitHub account).
-2.  **Developers**: Check the [Issues](https://github.com/BetterLosBanos/betterlb/issues) tab for "Help Wanted" or "Good First Issue" labels.
-3.  **Data Auditors**: Help us verify community submissions on GitHub to ensure the portal remains an authoritative source of information.
-4.  **Translators**: Help translate the portal to Filipino and other Philippine languages by working on `public/locales/` files.
-
-### Development Workflow
-- Follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced via commitlint)
-- All PRs run ESLint and Prettier automatically
-- E2E tests run on CI to ensure cross-browser compatibility
-
----
-
-## 🚢 Deployment
-
-### Production Deployment (BetterLB)
-
-BetterLB is deployed on **Cloudflare Pages** with:
-- **Frontend**: Vite build automatically deployed on push to `main` branch
-- **Backend**: Cloudflare Pages Functions for API endpoints
-- **Database**: Cloudflare D1 (`betterlb-openlgu`) for legislative data
-- **Search**: Meilisearch instance for fuzzy search
-- **KV Storage**: Weather data caching with automatic updates
-- **Wrangler**: Version 4.155.0 (pinned for compatibility)
-
-### Deployment for Other LGUs
-
-When deploying for your own LGU:
-
-1. **Cloudflare Pages**: Connect your GitHub repository
-2. **Environment Variables**: Configure your D1 database binding
-3. **Custom Domain**: Set up your custom domain (e.g., `betterlgu.gov.ph`)
-4. **Database Migration**: Run database migrations on remote D1 instance
-5. **Meilisearch**: Deploy your own Meilisearch instance or use alternative search
-
-**Note:** The deployment workflow uses Wrangler 4.155.0 (pinned in both `.github/workflows/deploy.yml` and `package.json`). If upgrading, ensure compatibility with the Wrangler Action and test thoroughly.
-
-See [`ARCHITECTURE.md`](./ARCHITECTURE.md#deployment) for detailed deployment strategies.
-
-## License and Data Sources
-
-### Code License
-This project is released under the [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/) dedication. The work is dedicated to the public domain and can be freely used, modified, and distributed without restriction.
-
-### Data Attribution
-BetterLB aggregates data from multiple sources:
-
-| Data Source | Type | Attribution |
-|-------------|------|-------------|
-| **Municipality of Los Baños** | Official government data, services directory | Public domain |
-| **Philippine Government Procurement Portal (PhilGEPS)** | Procurement bids and awards | Republic of the Philippines |
-| **Department of Budget and Management (DBM)** | Financial releases | Republic of the Philippines |
-| **Department of Public Works and Highways (DPWH)** | Infrastructure projects | Republic of the Philippines |
-| **Official Gazette of the Philippines** | Legislative documents reference | Republic of the Philippines |
-
-**Note**: Data is presented as-is and may not reflect the most current information. Always verify with official LGU sources.
-
----
-
-## 📞 Contact and Support
-
-### For Los Baños Residents
-- **Website**: https://betterlb.org
-- **GitHub Issues**: Report bugs or suggest features at [github.com/BetterLosBanos/betterlb/issues](https://github.com/BetterLosBanos/betterlb/issues)
-- **Community**: Join our community contributions via the "Contribute" page on the portal
-
-### For Other LGUs
-- **Forking Guide**: See [`FORKING.md`](./FORKING.md) for detailed instructions
-- **Architecture**: See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for system design
-- **Documentation**: See [`docs/`](./docs/) for comprehensive guides
+- **Website**: https://betterbagabag.org
+- **Budget portal**: https://budget.betterbagabag.org
+- **GitHub**: https://github.com/marttidumangeng/betterbagabag
+- **Discord**: https://discord.gg/dA6tkU4FYS (BetterGov.ph community)
+- **Portal contact email**: TBD (not the LGU mayor’s office inbox)
